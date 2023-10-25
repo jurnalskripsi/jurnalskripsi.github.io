@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perbedaan Variabel Terikat Dan Variabel Bebas - BELAJAR</title>
+    <meta name="description" content="Perbedaan Variabel Terikat Dan Variabel Bebas, , , , , , , 0, , , , , , 0, perbedaan-variabel-terikat-dan-variabel-bebas, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Perbedaan Variabel Terikat Dan Variabel Bebas - BELAJAR" />
+    <meta property="og:description" content="Perbedaan Variabel Terikat Dan Variabel Bebas, , , , , , , 0, , , , , , 0, perbedaan-variabel-terikat-dan-variabel-bebas, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Perbedaan Variabel Terikat Dan Variabel Bebas - BELAJAR" />
+    <meta name="twitter:description" content="Perbedaan Variabel Terikat Dan Variabel Bebas, , , , , , , 0, , , , , , 0, perbedaan-variabel-terikat-dan-variabel-bebas, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://jurnalskripsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://jurnalskripsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://jurnalskripsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://jurnalskripsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://jurnalskripsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://jurnalskripsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://jurnalskripsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Perbedaan Variabel Terikat Dan Variabel Bebas</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ChadwickBerhitu</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Perbedaan+Variabel+Terikat+Dan+Variabel+Bebas" alt="Perbedaan Variabel Terikat Dan Variabel Bebas">
+                    </div>
+                    <p></p>
+                    <p> Apa perbedaan variabel bebas dan variabel terikat? (</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-bebas-dan-variabel-terikat">1.
+                                             Apa perbedaan variabel bebas dan variabel terikat? (</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-variabel-bebas-dan-variabel-terikat">2.
+                                            Perbedaan Variabel bebas Dan Variabel Terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bedakan-antara-variabel-bebas-dan-variabel-terikat">3.
+                                            bedakan antara variabel bebas dan variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-bebas-terikat-dan-kontrol">4.
+                                            apa perbedaan variabel bebas, terikat dan kontrol?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-variabel-bebas-dan-variabek-terikat-bagaimana-hubungan-kedua-variabel-tersebut">5.
+                                            jelaskan perbedaan variabel bebas dan variabek terikat. bagaimana hubungan kedua variabel tersebut?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-terikat-bebas-terkontrol">6.
+                                            apa perbedaan variabel terikat, bebas, terkontrol</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-bebas-variabel-terikat-variabel-kontrol-dan-variabel-pengganggu">7.
+                                            apa perbedaan variabel bebas, variabel terikat, variabel kontrol dan variabel pengganggu?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-variabel-bebas-terikat-dan-kontrol">8.
+                                            Perbedaan variabel bebas, terikat Dan kontrol</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-variabel-bebasvariabel-terikat-dan-variabel-terkontrol-jelaskan">9.
+                                            apa perbedaan antara variabel bebas,variabel terikat dan variabel terkontrol? jelaskan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#coba-sebutkan-perbedaan-variabel-bebas-dan-variabel-terikat-dalam-eksprimen">10.
+                                            coba sebutkan perbedaan variabel bebas dan variabel terikat dalam eksprimen </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#beda-variabel-terikat-variabel-terkontrol-dan-variabel-bebas-adalah">11.
+                                            beda variabel terikat, variabel terkontrol, dan variabel bebas adalah ???????</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelasakan-perbedaan-variabel-bebas-fan-variabel-terikat-bagaimana-cara-hubungan-kedua-variabel-tersebut%e2%80%8b">12.
+                                            jelasakan perbedaan variabel bebas fan variabel terikat. Bagaimana cara hubungan kedua variabel tersebut?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-variabel-bebas-dan-variabel-terikat">13.
+                                            Jelaskan perbedaan antara variabel bebas dan variabel terikat !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perbedaan-variabel-bebasterkontrol-dan-terikat">14.
+                                            sebutkan perbedaan variabel bebas,terkontrol dan terikat?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-kontrol-variabel-bebas-dan-variabel-terikat-berikan-contoh">15.
+                                            apa perbedaan variabel kontrol, variabel bebas, dan variabel terikat? berikan contoh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-variabel-kontrol-variabel-bebas-dan-variabel-terikat-beserta-contohnya">16.
+                                            perbedaan variabel kontrol variabel bebas dan variabel terikat beserta contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-3-judul-penelitian-sosiologi-dengan-membedakan-variabel-bebas-dan-variabel-terikat">17.
+                                            buatlah 3 judul penelitian sosiologi dengan membedakan variabel bebas dan variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perbedaan-antara-variabel-bebas-terikat-dan-kontrol">18.
+                                            Sebutkan perbedaan antara variabel bebas, terikat dan kontrol!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-dari-variabel-bebas-terikat-dan-kontrol-pada-suatu-percobaan">19.
+                                            Perbedaan dari variabel bebas, terikat dan kontrol pada suatu percobaan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-bedanya-variabel-bebas-dan-terikat">20.
+                                            Apa bedanya variabel bebas dan terikat?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perbedaan-variabel-bebas-dan-terikat-dan-kontrol">21.
+                                            Sebutkan perbedaan variabel bebas dan terikat dan kontrol</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-variabel-bebas-dengan-variqbel-terikat">22.
+                                            Jelaskan perbedaan variabel bebas dengan variqbel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-variabel-bebasvariabel-kontrolvariabel-terikat">23.
+                                            perbedaan variabel bebas,variabel kontrol,variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-variabel-bebas-variabel-terikat-dan-varisbel-terkontrol-jelaskanlah">24.
+                                            apa perbedaan antara variabel bebas, variabel terikat dan varisbel terkontrol? jelaskanlah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-variabel-bebas-dengan-variabel-terikat-apa-ya-%e2%80%8b">25.
+                                            perbedaan variabel bebas dengan variabel terikat apa ya ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-pada-rancangan-percobaan-ilmiahtolong-ya-bantaunnya">26.
+                                            Apa perbedaan variabel bebas, variabel terikat, dan variabel pada rancangan percobaan ilmiah??
+Tolong ya bantaunnya.. :)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membedakan-variabel-bebas-dan-variabel-terikat">27.
+                                            Cara membedakan variabel bebas dan variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-judul-penelitian-dengan-membedakan-variabel-bebas-dan-variabel-terikat-serta-hubungan-variabel-positif-dan-variabel-negatif-penelitian-sosiologi">28.
+                                            Carilah judul penelitian dengan membedakan variabel bebas dan variabel terikat serta hubungan variabel positif dan variabel negatif (Penelitian Sosiologi)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-dari-perbedaan-variabel-bebas-dan-terikat">29.
+                                            contoh dari perbedaan variabel bebas dan terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-variabel-bebas-dengan-variabel-terikat%e2%80%8b">30.
+                                            jelaskan perbedaan antara variabel bebas dengan variabel terikat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-antara-variabel-bebas-variabel%c2%a0terikat-dan-variabel%c2%a0kontrol">31.
+                                            Perbedaan antara variabel bebas, variabel terikat, dan variabel kontrol?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-variabel-bebasterikatdan-kontrol">32.
+                                            jelaskan perbedaan variabel bebas,terikat,dan kontrol?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-jelaskan-perbedaan-antara-variabel-bebas-dan-variabel-terikatjawab%e2%80%8b">33.
+                                            4.Jelaskan perbedaan antara variabel bebas dan variabel terikat!Jawab:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-perbedaan-yang-ada-di-dalam-variabel-bebas-terikat-dan-control">34.
+                                            apakah perbedaan yang ada di dalam variabel bebas , terikat dan control ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antar-variabel-bebas-variabel-terikat-dan-variabel-kontrol">35.
+                                            Jelaskan perbedaan antar variabel bebas, variabel terikat dan variabel kontrol!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-perbedaan-antara-variabel-bebas-dengan-variabel-terikat">36.
+                                            Tuliskan perbedaan antara variabel bebas dengan variabel terikat!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-3-judul-penelitian-sosiologi-dengan-membedakan-variabel-bebas-dan-variabel-terikat">37.
+                                            buatlah 3 judul penelitian sosiologi dengan membedakan variabel bebas dan variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jawab7-sebutkan-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-terkontrolljawabdinolari%e2%80%8b">38.
+                                            Jawab:7. Sebutkan perbedaan variabel bebas, variabel terikat dan variabel terkontrollJawabdinolari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-variabel-bebas-dan-terikat-serta-contohnya">39.
+                                            Apa Perbedaan Variabel Bebas dan Terikat serta contohnya :) </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-kontrol">40.
+                                            Jelaskan perbedaan variabel bebas variabel terikat dan variabel kontrol</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-bebas-dan-variabel-terikat">
+                            1.  Apa perbedaan variabel bebas dan variabel terikat? (</h2><br />
+                        variabel bebas: variabel yg ga terikat sama sesuatu, contohnya banyaknya pupuk yg dberikan atau bnyaknya intensitas cahaya matahari saat mengamati proses pertumbuhan tanaman<br /><br />variabel terikat: variabel yg terikat oleh variabel bebasnya, contohnya arah tumbuh tanaman bergantung pada arah datangnya sinar matahariVariabel bebas atau variabel penyebab (independent variables)<br />Variabel bebas adalah variabel yang menyebabkan atau memengaruhi, yaitu faktor-faktor yang diukur, dimanipulasi atau dipilih oleh peneliti untuk menentukan hubungan antara fenomena yang diobservasi atau diamati.<br /><br />Variabel terikat atau variabel tergantung (dependent variables).<br />Variabel terikat adalah faktor-faktor yang diobservasi dan diukur untuk menentukan adanya pengaruh variabel bebas, yaitu faktor yang muncul, atau tidak muncul, atau berubah sesuai dengan yang diperkenalkan oleh peneliti.<br /><br />Semoga membantu :)<br /><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-variabel-bebas-dan-variabel-terikat">
+                            2. Perbedaan Variabel bebas Dan Variabel Terikat</h2><br />
+                        variabel bebas itu variabel yang jumlahnya sengaja dibuat bebas, sedangkan variabel terikat adalah variabel yang muncul akibat adanya variabel bebas.<br /><br />contoh : pertumbuhan kecambah pada tempat      gelap dan terang<br />              variabel bebas : intensitas cahaya<br />              variabel tetap.  : jenis tanah, dll<br />              variabel terikat : panjang kecambah<br />
+                                            <h2 class="ez-toc-section" id="bedakan-antara-variabel-bebas-dan-variabel-terikat">
+                            3. bedakan antara variabel bebas dan variabel terikat</h2><br />
+                        1. Variabel Bebas ( Variabel Independen)<br />Variabel bebas adalah variable yang mempengaruhi factor-faktor yang diukur oleh peneliti untuk menentukan hubungan antara fenomena yang diamati. Variable bebas adalah variable yang dapat mempengaruhi timbulnya variable terikat atau dependent. Variabel bebas juga sering disebut dalam Structural Equation Modelling sebagai variabel eksogen.<br />2. Variabel Terikat atau Dependent<br />Variabel Terikat sering juga disebut variabel konsekuen, atau variable pengaruh. Variable terikat adalah factor-faktor yang diobservasi menentukan adanya pengaruh variable bebas yaitu factor muncul atau tidak muncul yang ditentukan oleh penenliti.variabel bebas adalah variabel yang dapat dibedakan perlakuannya, untuk menguji suatu eksperimen<br />sedangkan variabel terikat adalah hasil dari perlakuan tersebut<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-bebas-terikat-dan-kontrol">
+                            4. apa perbedaan variabel bebas, terikat dan kontrol?</h2><br />
+                        v. bebas : variabel yang dibuat tidak sama dalam penelitian<br />v. terikat : variabel yang muncul akibat adanya v. bebas<br />v. kontrol : variabel yang dibuat sama dalam penelitianbebas : perlakuan semau pelaku percobaan ke bahan percobaan <br /><br />terikat : hasil pasti dari suatu percobaan<br /><br />kontrol : perlakuan yang disamakan thdp semua bahan percobaan <br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-variabel-bebas-dan-variabek-terikat-bagaimana-hubungan-kedua-variabel-tersebut">
+                            5. jelaskan perbedaan variabel bebas dan variabek terikat. bagaimana hubungan kedua variabel tersebut?</h2><br />
+                        <p>1. Variabel bebas atau variabel penyebab (independent variables)
+</p><p>Variabel bebas adalah variabel yang menjadi penyebab atau memengaruhi, meliputi faktor-faktor yang diukur, dimanipulasi atau dipilih oleh peneliti, tujuannya agar dapat menentukan hubungan antara fenomena yang diobservasi atau diamati.
+</p><p>2. Variabel terikat atau variabel tergantung (dependent variables).
+</p><p>Variabel terikat ialah faktor-faktor yang diamati dan diukur dalam rangka menentukan pengaruh variabel bebas, di dalamnya itu termasuk faktor yang muncul, atau tidak muncul, atau berubah sesuai dengan yang diperkenalkan oleh peneliti.
+</p><p>Contoh:
+</p><p>Jika seorang peneliti ingin mengobservasi hubungan antara dua variabel, misalkan variabel waktu untuk bekerja (A) dan prestasi bekerjanya (B), lalu pertanyaan atau masalah yang diajukan , “Bagaimanakah prestasi kerja yang dicapai jika waktu yang digunakan untuk bekerja lebih banyak atau lebih sedikit?”
+</p><p>Banyak sedikitnya waktu bekerja yang digunakan oleh pekerja diidentifikasikan sebagai variabel bebas, sedangkan prestasi kerja sebagai variabel terikat. Variabel ini (waktu kerja) dimanipulasi atau diubah untuk menyebabkan adanya perubahan pada variabel lainnya (prestasi bekerja).</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-terikat-bebas-terkontrol">
+                            6. apa perbedaan variabel terikat, bebas, terkontrol</h2><br />
+                        1. Variabel bebas : pupuk<br />2. Variabel kontrol : pH, air, cahaya, suhu, udara, pupuk dan parasit tanah<br />3. Variabel terikat : pertumbuhan kacang tanahVariabel bebas adalah variabel / faktor yang dibuat bebas dan bervariasi<br />Variabel terikat adalah variabel / faktor yang muncul akibat adanya variabel bebas<br />Variabel kontrol adalah variabel / faktor lain yang ikut berpengaruh yang dibuat sama pada setiap media percobaan dan terkendali.<br /><br />4.3<br />61 pilih<br /><br />TERIMA KASIH<br />115<br />Komentar tidak puas? sampaikan!<br />JAWABAN PALING CERDAS!<br /><br />indris167 Jenius<br /><br />Perbedaannya dalam pengertian dan fungsinya.<br />1. Jika variable kontrol merupakan variable pembanding terhadap variable yang tengah diuji.<br />2. Variable bebas merupakan variable penyebab.<br />3.  Sedangkan Variable terikat merupakan variable yang tengah diobservasi.<br />Contoh, dalam penelitian pengaruh lama perendaman pertumbuhan biji kacang hijau, maka dapat disebutkan variable-variablenya sebagai berikut :<br />1. Varible terikat : Pertumbuhan biji kacang hijau<br />2. Variable bebas : Lama perendaman<br />3. Variable kontrol : biji kacang hijau tanpa perendaman<br />4.1<br />30 pilih<br /><br />TERIMA KASIH<br />76<br />Komentar (2) tidak puas? sampaikan!<br /><br />perbedaanya <br /><br />mana perbedaanya <br />Masuk untuk menambahkan komentar<br /><br /><br />MahaguruPenolong<br />Hai! Masih tidak yakin dengan jawabannya?<br />PERIKSA JAWABAN SERUPA<br />Tanyakan p<br /><br />semoga membantu y<br /><br />jangan lupa terimakasih<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-bebas-variabel-terikat-variabel-kontrol-dan-variabel-pengganggu">
+                            7. apa perbedaan variabel bebas, variabel terikat, variabel kontrol dan variabel pengganggu?</h2><br />
+                        Variabel bebas= variabel yg mempengaruhi variabel terikat dgn sengaja di buat berbeda<br />Variabel terikat= variabel yg dipengaruhi variabel bebas<br />Variabel kontrol= variabel yg di buat sama utk semua perlakuan<br />Variabel bebas adalah variabel yang menyebabkan atau memengaruhi, yaitu faktor-faktor yang diukur, dimanipulasi atau dipilih oleh peneliti untuk menentukan hubungan antara fenomena yang diobservasi atau diamati.<br /><br />Variabel terikat adalah faktor-faktor yang diobservasi dan diukur untuk menentukan adanya pengaruh variabel bebas, yaitu faktor yang muncul, atau tidak muncul, atau berubah sesuai dengan yang diperkenalkan oleh peneliti.<br /><br />Variabel kontrol adalah variabel yang diusahakan untuk dinetralisasi oleh peneliti.<br /><br />variable pengganggu didefinisikan sebagai variabel yang secara teoritis mempengaruhi hubungan varaibel yang sedang diteliti tetapi tidak dapat dilihat, diukur, dan dimanipulasi; pengaruhnya harus disimpulkan dari pengaruh-pengaruh variabel bebas dan variable moderat terhadap gejala yang sedang diteliti.<br />
+                                            <h2 class="ez-toc-section" id="perbedaan-variabel-bebas-terikat-dan-kontrol">
+                            8. Perbedaan variabel bebas, terikat Dan kontrol</h2><br />
+                        variabel bebas adalah variabel yang sengaja dibuat tidak sama oleh peneliti.sedangkan variabel terikat adalah variabel yang terjadi akibat perlakuan variabel bebas.sedangkan variabel kontrol adalah variabel yang dibuat konstan sehingga pengaruhnya terhadap variabel bebas tidak dapat dipengaruhi oleh faktor luar yang tidak diteliti.<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-variabel-bebasvariabel-terikat-dan-variabel-terkontrol-jelaskan">
+                            9. apa perbedaan antara variabel bebas,variabel terikat dan variabel terkontrol? jelaskan</h2><br />
+                        variabel bebas merupakan variabel yang dapat diubah ubah menurut kehendak sesuai proses observasi<br />variabel kontrol merupakan variabel yang dikondisikan sama terhadap objek<br />variabel terikat merupakan hasil yang terikat dengan proses observasi<br />
+                                            <h2 class="ez-toc-section" id="coba-sebutkan-perbedaan-variabel-bebas-dan-variabel-terikat-dalam-eksprimen">
+                            10. coba sebutkan perbedaan variabel bebas dan variabel terikat dalam eksprimen </h2><br />
+                        Variabel bebas atau biasanya juga disebut variabel independent adalah variabel yang dapat mempengaruhi objek yang diteliti oleh peneliti dan tergantung pada si peneliti. Biasanya variabel bebas dapat dikurangi jumlahnya.<br /><br />Variabel terikat adalah hasil dari variabel bebas, baik yang diharapkan oleh peneliti maupun yang tidak diharapkan oleh peneliti (bersifat random)<br /><br />
+                                            <h2 class="ez-toc-section" id="beda-variabel-terikat-variabel-terkontrol-dan-variabel-bebas-adalah">
+                            11. beda variabel terikat, variabel terkontrol, dan variabel bebas adalah ???????</h2><br />
+                        Variabel bebas : pengaruh intesitas cahaya -&gt; manipulasi 
+Variabel terikat : pertumbuhan cth -&gt; tanaman / jagung
+Variabel bebas : Air,Suhu,Media -&gt; cahaya<br />
+                                            <h2 class="ez-toc-section" id="jelasakan-perbedaan-variabel-bebas-fan-variabel-terikat-bagaimana-cara-hubungan-kedua-variabel-tersebut%e2%80%8b">
+                            12. jelasakan perbedaan variabel bebas fan variabel terikat. Bagaimana cara hubungan kedua variabel tersebut?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>- Perbedaan antara variabel bebas dan terikat terletak pada hubungan antara keduanya. Variabel bebas adalah variabel yang mempengaruhi. Sedangkan variabel terikat adalah variabel yang dipengaruhi.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-variabel-bebas-dan-variabel-terikat">
+                            13. Jelaskan perbedaan antara variabel bebas dan variabel terikat !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Variabel Bebas: Variabel yg mempengaruhi secara tidak langsung / bebas</p><p>Variabel Terikat: Variabel yg mempengaruhi secara langsung</p><p></p><p><strong>Penjelasan:</strong></p><p>Contoh dalam Pertumbuhan Bunga Anggrek</p><p>Variabel Bebas: Cuaca, Angin</p><p>Variabel Terikat: Air untuk menyiram, Pupuk Tanaman, Pestisida, dll</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perbedaan-variabel-bebasterkontrol-dan-terikat">
+                            14. sebutkan perbedaan variabel bebas,terkontrol dan terikat?</h2><br />
+                        Variabel bebas : variabel yang mempengaruhi terjadinya perubahan. Variabel ini yang nantinya akan diukur, dipilih, dan diubah-ubah untuk melihat hubungannya dalam suatu peristiwa<br /><br />Variabel kontrol : variabel yang diupayakan untuk dinetralisasi oleh peneliti. Variabel ini yang menyebabkan hubungan antara variabel bebas dan variabel terikat menjadi konstan dan lebih akurat<br /><br />Variabel terikat : faktor yang diamati oleh peneliti untuk mengetahui ada tidaknya pengaruh dari variabel bebas<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-kontrol-variabel-bebas-dan-variabel-terikat-berikan-contoh">
+                            15. apa perbedaan variabel kontrol, variabel bebas, dan variabel terikat? berikan contoh</h2><br />
+                        Jawaban<p>Perbedaan variabel kontrol, variabel bebas, dan variabel terikat adalah:</p><strong>Variabel kontrol </strong>adalah variabel yang dikendalikan atau dibuat konstan sehingga pengaruh variabel independen terhadap variabel dependen tidak dipengaruhi oleh faktor luar yang tidak sedang diteliti.
+<strong>Variabel bebas</strong> adalah variabel independen yang mempengaruhi perubahan pada variabel lain (dependen)
+<strong>Variabel terikat</strong> adalah variabel dependen yang dipengaruhi perubahannya oleh variabel lain (independen)
+<p></p>Pembahasan<p>Variabel kontrol menurut Business Dictionary, mengacu pada variabel konstan yang memperjelas dan menilai hubungan antara 2 variabel lain. Contohnya ialah pada penelitian perbedaan hasil belajar mahasiswa universitas negeri dan swasta. Maka dibutuhkan variabel kontrol seperti usia dan materi pelajaran sehingga mempermudah dalam menentukan perbedaan dan berfokus hanya pada hasil belajar.  </p><p>Contoh lain yaitu penelitian tentang pengaruh usia pernikahan dini terhadap resiko perceraian. Variabel bebasnya yaitu usia pernikahan dini, sedangkan variabel terikatnya adalah resiko perceraian.  </p><p></p>Pelajari lebih lanjut
+<p>1.  Pengertian variabel-variabel: https://brainly.co.id/tugas/16870856</p><p>2. Pentingnya Metode Penelitian:  https://brainly.co.id/tugas/10948043</p><p>3.  Contoh Variabel: https://brainly.co.id/tugas/11353773</p><p>-----------------------------
+</p><p>  </p>Detil jawaban
+<p><strong>Kelas:  </strong>12 SMA</p><p><strong>Mapel: </strong>
+Sosiologi
+</p><p><strong>Bab:</strong>  Bab 3 - Metode Penelitian Sosial
+</p><p><strong>Kode:</strong>  12.20.3
+</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-variabel-kontrol-variabel-bebas-dan-variabel-terikat-beserta-contohnya">
+                            16. perbedaan variabel kontrol variabel bebas dan variabel terikat beserta contohnya</h2><br />
+                        perbedaan variabel kontrol variabel bebas dan variabel terikat beserta contohnya yaitu:<br /><br />- variabel kontrol<br />disebut juga sebagai variabel pembanding artinya variabel ini tidak diberi perlakuan apapun dan kondisinya orisinil atau alami <br />contohnya: <br />Andi ingin mengetahui kecepatan pertumbuhan tunas kentang<br />maka andi akan memberikan hormon auksin dengan konsentrasi ppm yang berbeda pada setiap kelompok kentang yaitu: kelompok 1 =1 ppm; kelompok 2= 3 ppm; kelompok 3= 5 ppm dan untuk KONTROLnya (kelompok 0) hanya diberikan air biasa. <br />Jadi kontrol disini adalah kelompok yg hanya diberikan air biasa <br /><br />Variabel bebas <br />-disebut juga variabel dependent karena variabel ini ditentukan oleh si peneliti apakah memakai perlakuan plot/wilayah, konsentrasi, waktu dsb.<br />contoh:<br />Andi ingin mengetahui kecepatan pertumbuhan tunas kentang<br />maka andi akan memberikan hormon auksin dengan konsentrasi ppm yang berbeda pada setiap kelompok kentang yaitu: kelompok 1 =1 ppm; kelompok 2= 3 ppm; kelompok 3= 5 ppm dan untuk KONTROLnya (kelompok 0) hanya diberikan air biasa. <br /><br />Jadi yang termasuk variabel bebas yaitu konsentrasi hormon auksin<br /><br />Variabel terikat<br />- variabel ini juga disebut variabel independent<br />karena variabel ini muncul akibat adanya variabel bebas. variabel ini muncul karena ada faktor" penyebab kenapa fenomena tersebut bisa terjadi.<br />contoh:<br />Andi ingin mengetahui pengaruh hormon auksin terhadap jumlah tunas kentang yang tumbuh<br />maka andi akan memberikan hormon auksin dengan konsentrasi ppm yang berbeda pada setiap kelompok kentang yaitu: kelompok 1 =1 ppm; kelompok 2= 3 ppm; kelompok 3= 5 ppm dan untuk KONTROLnya (kelompok 0) hanya diberikan air biasa. setelah beberapa hari <br />ternyata kelompok 3 yang paling banyak menumbuhkan tunas dibandingkan kelompok yang lain dan kelompok 0 paling sedikit jumlah tunas yang tumbuh.<br /><br />Jadi yang termasuk variabel terikat pada ilustrasi tersebut yaitu jumlah tunas kerena<br /><br />jumlah tunas yang tumbuh lebih banyak pada kelompok 3 akibat diberikan hormon auksin 5 ppm<br />
+                                            <h2 class="ez-toc-section" id="buatlah-3-judul-penelitian-sosiologi-dengan-membedakan-variabel-bebas-dan-variabel-terikat">
+                            17. buatlah 3 judul penelitian sosiologi dengan membedakan variabel bebas dan variabel terikat</h2><br />
+                        pembangunan bangsa . <br />#maaf kalo jawabannya salah<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perbedaan-antara-variabel-bebas-terikat-dan-kontrol">
+                            18. Sebutkan perbedaan antara variabel bebas, terikat dan kontrol!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Variabel bebas adalah variabel dalam penelitian yang dibuat berbeda . Variabel terikat adalah variabel yang diamati . Variabel kontrol adalah variabel yang dibuat sama dalam penelitian. Variabel bebas adalah variabel dalam penelitian yang dibuat berbeda.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-dari-variabel-bebas-terikat-dan-kontrol-pada-suatu-percobaan">
+                            19. Perbedaan dari variabel bebas, terikat dan kontrol pada suatu percobaan?</h2><br />
+                        variabel bebas adalah perlakuan yang berbeda. contohnya seperti kecambah diletakkan ditempat yg terkena sinar matahari dan yg satunya lagi diletakkan ditempat gelap. variabel terikat (respon) adalah hasil dari variabel bebas. seperti pertumbuhan kecambah akan berbeda. dan variabel kontrol adalah perlakuan yg sama, seperti pot, banyaknya kecambah.<br />
+                                            <h2 class="ez-toc-section" id="apa-bedanya-variabel-bebas-dan-terikat">
+                            20. Apa bedanya variabel bebas dan terikat?</h2><br />
+                        bebas : yang mempengaruhi<br />terikat : yang diteliti<br /><br />misalkan percobaan pertumbuhan kecambah kacang hijau dengan pengaruh sinar matahari<br /><br />variabel bebas: tempat ngeletakin bijinya, misal di bawah kasur, di taman, dll<br />variabel terikat: biji kacang hijau nya sejenisVariabel bebas atau bisa disebut
+variabel independen adalah tipe variabel yang menjelaskan atau mempengaruhi
+variabel lain. (Dkk, Sangadji, 2010,136) 
+
+Variabel ini
+dapat diberi masukan, dimanipulasi. Variabel ini dianggap dapat menyebabkan,
+mengakibatkan atau mempengaruhi hasil tersebut. (Tahir, 2011,33)
+
+b. Variabel
+terikat atau variabel dependen adalah tipe variabel yang dijelaskan atau
+dipengaruhi oleh variabel independen (Dkk, Sangadji, 2010,136)
+
+Variabel ini
+adalah hasil atau akibat dari bagaimana variabel bebas dimanipulasi<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perbedaan-variabel-bebas-dan-terikat-dan-kontrol">
+                            21. Sebutkan perbedaan variabel bebas dan terikat dan kontrol</h2><br />
+                        <p>variabel bebas adalah variabel penyebab dalam percobaan. </p><p>Variabel terikat adalah variabel yang dipengaruhi oleh variabel bebas. Atau secara singkatnya variabel terikat adalah variabel yang tengah di observasi. </p><p>Variabel kontrol adalah bariabel yang dibuat sama untuk semua perlakuan.</p><p> </p><p>maaf klo slh</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-variabel-bebas-dengan-variqbel-terikat">
+                            22. Jelaskan perbedaan variabel bebas dengan variqbel terikat</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Perbedaan antara variabel bebas dan terikat yaitu hubungan antara keduanya. Variabel bebas adalah variabel yang mempengaruhi. Sedangkan variabel terikat adalah variabel yang dipengaruhi.</p><p></p><p>jangan lupa jadikan jawaban terbrainly jika benar ya...terima kasih...♡</p><p>#backtoschool2019</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-variabel-bebasvariabel-kontrolvariabel-terikat">
+                            23. perbedaan variabel bebas,variabel kontrol,variabel terikat</h2><br />
+                        variabel kontrol adalah faktor yg dibuat sama. variabel bebas adalah faktor yg sngaja diubah. variabel terikat faktor hasil percobaan yg dipengaruhi oleh v.kontrol dan v.bebasVariabel bebas adalah perlakuan yang dibuat berbeda. Variabel terikat adalah perlakuan yang dipengaruhi oleh hal lain. variabel kontrol ialah perlakuan yang dapat diatur<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-variabel-bebas-variabel-terikat-dan-varisbel-terkontrol-jelaskanlah">
+                            24. apa perbedaan antara variabel bebas, variabel terikat dan varisbel terkontrol? jelaskanlah </h2><br />
+                        -variabel bebas adalah variabel yang sengaja dibuat tidak sama dalam suatu penelitian<br />-variabel terikat adalah variabel yang muncul karena adanya variabel bebas<br />-variabel terkontrol adalah variabel yang dibuat sama dalam suatu penelitian<br /><br />semoga nembantu:))<br />
+                                            <h2 class="ez-toc-section" id="perbedaan-variabel-bebas-dengan-variabel-terikat-apa-ya-%e2%80%8b">
+                            25. perbedaan variabel bebas dengan variabel terikat apa ya ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan antara variabel bebas danterikat terletak pada hubungan antara keduanya. Variabel bebas adalahvariabel yang mempengaruhi. Sedangkan variabel terikat adalahvariabel yang dipengaruhi. Postingan ini akan menjelaskan tentangperbedaan antara variabel bebas danterikat disertai contohnya.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-pada-rancangan-percobaan-ilmiahtolong-ya-bantaunnya">
+                            26. Apa perbedaan variabel bebas, variabel terikat, dan variabel pada rancangan percobaan ilmiah??
+Tolong ya bantaunnya.. :)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan antara variabel bebas dan terikat terletak pada hubungan antara keduanya. Variabel bebas adalah variabel yang mempengaruhi. Sedangkan variabel terikat adalah variabel yang dipengaruhi.</p><p></p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah(:</p><br />
+                                            <h2 class="ez-toc-section" id="cara-membedakan-variabel-bebas-dan-variabel-terikat">
+                            27. Cara membedakan variabel bebas dan variabel terikat</h2><br />
+                        variabel bebas adalah variabel yg senghaja dibuat dibuat tidak sama dalam suatu eksperimen<br />variabel terkait adalah variabel yg terjadi karena perilaku variabel bebas<br /><br />inikan mata pelajaran biologi bukan ekonomi<br />
+                                            <h2 class="ez-toc-section" id="carilah-judul-penelitian-dengan-membedakan-variabel-bebas-dan-variabel-terikat-serta-hubungan-variabel-positif-dan-variabel-negatif-penelitian-sosiologi">
+                            28. Carilah judul penelitian dengan membedakan variabel bebas dan variabel terikat serta hubungan variabel positif dan variabel negatif (Penelitian Sosiologi)</h2><br />
+                        Gak tau smoga membantyu<br />
+                                            <h2 class="ez-toc-section" id="contoh-dari-perbedaan-variabel-bebas-dan-terikat">
+                            29. contoh dari perbedaan variabel bebas dan terikat</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Variabel bebas dan terikat atau disebut juga variabel independen dan dependen adalah dua jenis variabel penelitian yang dapat digunakan peneliti untuk merumuskan hipotesis. ... Variabel bebas adalah variabel yang mempengaruhi. Sedangkan variabel terikat adalah variabel yang dipengaruhi. </p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-variabel-bebas-dengan-variabel-terikat%e2%80%8b">
+                            30. jelaskan perbedaan antara variabel bebas dengan variabel terikat​</h2><br />
+                        Jawab : <br /><br />Variabel bebas dan terikat atau disebut juga variabel independen dan dependen adalah dua jenis variabel penelitian yang dapat digunakan peneliti untuk merumuskan <br />hipotesis. ... Variabel bebas adalah variabel yang mempengaruhi. Sedangkan variabel terikat adalah variabel yang dipengaruhi.<br /><br />Terimakasih<p><strong>Jawab:</strong></p><p>variabel bebas: yang terpengaruh oleh variabel terikat (lemona)</p><p>variabel terikat:yang mempengaruhi variabel bebas (berat badan siswa)</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p><strong>Pengaruh </strong>lemona <strong>terhadap penurunan </strong>berat badan siswa</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-antara-variabel-bebas-variabel%c2%a0terikat-dan-variabel%c2%a0kontrol">
+                            31. Perbedaan antara variabel bebas, variabel terikat, dan variabel kontrol?</h2><br />
+                        bebas: variabel yg dibua berbeda utk mempengaruhi percobaan<br />terikat: variabel yg dibuat sama <br />kontrol: variabel yg ada krna variabel bebas, atau dalam kata lain hasil dri percobaan itu<br /><br />Variabel bebas adalah variabel yang bisa dibuat bebas dan bervariasi<br /> Variabel terikat adalah variabel yang muncul akibat adanya variabel bebas<br />Variabel
+ kontrol adalah variabel lain yang ikut berpengaruh yang dibuat
+ sama pada setiap media percobaan dan terkendali.<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-variabel-bebasterikatdan-kontrol">
+                            32. jelaskan perbedaan variabel bebas,terikat,dan kontrol?</h2><br />
+                        variabel bebas : yg sengaja  dibuat berbeda/dapat diubah2<br />sedangkan<br />variabel terikat : yg muncul akibat pengaruh variabel babas<br />sedangkan<br />variabel kontrol: yg dibuat sama pada setiap kelompok percobaan<br /><br />
+                                            <h2 class="ez-toc-section" id="4-jelaskan-perbedaan-antara-variabel-bebas-dan-variabel-terikatjawab%e2%80%8b">
+                            33. 4.Jelaskan perbedaan antara variabel bebas dan variabel terikat!Jawab:​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>variabel bebas itu emang sengaja di buat berbeda untuk menjadi pembanding percobaan 1 dengan yang lainnya. sedangpkan variabel terikat adalah hasil dari perubahan variabel bebas</p><p></p><p>#backtoschool2019</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-perbedaan-yang-ada-di-dalam-variabel-bebas-terikat-dan-control">
+                            34. apakah perbedaan yang ada di dalam variabel bebas , terikat dan control ?</h2><br />
+                        Variabel adalah faktor penentu atau faktor yang berpengaruh; dapat berubah maupun diganti. Dalam merancang suatu percobaan.<br />Kamu perlu memilih variabel yang sesuai dengan tujuan percobaan, alat dan bahan yang ada tersedia. Selanjutnya, variabel yang dipilih diteliti pengaruhnya terhadap objek yang kamu teliti.<br /><br />Berdasarkan sifatnya, variabel yang memengaruhi kehidupan organisme dibedakan menjadi tiga, yaitu variabel fisika, variabel kimia, variabel biologi.-Variabel fisika, contohnya suhu, kelembapan, tekanan udara, cahaya matahari, radiasi, angin, dan gravitasi.<br />-Variabel kimia, contohnya kadar oksigen, air, karbondioksida, garam mineral, pH, dan nutrisi.<br />-Variabel biologi, contohnya organisme parasit, predator, organisme lain dalam hubungan rantai makanan, siklus hidup, kemampuan bereproduksi, dan daya tahan tubuh.<br /><br />Variabel dalam percobaan dapat dibedakan menjadi variabel bebas, variabel terikat, variabel kontrol, dan variabel penganggu.-Variabel bebas (variabel manipulasi) adalah perlakuan yang berbeda-beda dalam percobaan. Variabel bebas sengaja dibuat berbeda untuk mengetahui pengaruh variabel bebas terhadap variabel terikat.<br />-Variabel terikat (variabel respons) adalah hasil dari perlakuan yang berbeda-beda dalam percobaan. Variabel terikat merupakan akibat dari variabel bebas.Variabel kontrol (variabel terkendali) adalah perlakuan yang sama pada semua percobaan. Oleh karena perlakuannya sama, maka pengaruhnya juga sama pada semua kelompok percobaan (terkendali).<br /> -Variabel kontrol merupakan variabel yang tidak diteliti pengaruhnya dan hanya digunakan sebagai pembanding.Variabel pengganggu adalah variabel yang tidak dikehendaki, tetapi dapat memengaruhi hasil percobaan. Variabel pengganggu harus dihindari agar hasil percobaan sesuai dengan yang diharapkan.<br />Contoh : <strong></strong>Berikut ini contoh identifikasi variabel pada percobaan tentang pengaruh limbah kimiawi rumah tangga (detergen) terhadap pertumbuhan tumbuhan air Hydrilla sp.<br />kotak A diisi air dan Hydrilla sp. ; kotak B diisi air, <strong></strong>Hydrilla sp, dan detergen 1g, kotak C diisi air, <strong></strong>Hydrilla sp, dan detergen 2g, kotak D diisi air, <strong></strong>Hydrilla sp, dan detergen 3g, <br /><br />-Variabel kontrol: cahaya matahari, udara, wadah, tumbuhan air (Hydrilla sp.), dan air,.<br />-Variabel bebas: penambahan detergen yang berbeda-beda pada masing-masing kotak.<br />-Variabel terikat: pertumbuhan Hydrilla sp. (berat dan panjang tumbuhan setelah 2 minggu).<br />-Variabel pengganggu yang mungkin terjadi: kesegaran Hydrilla sp. yang digunakan kemungkinan tidak sama.<br /><br />dikutip dari : http://areamipa.blogspot.co.id/2017/08/pendekatan-ketrampilan-proses-untuk.html<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antar-variabel-bebas-variabel-terikat-dan-variabel-kontrol">
+                            35. Jelaskan perbedaan antar variabel bebas, variabel terikat dan variabel kontrol!</h2><br />
+                        -Variabel bebas (rekayasa/manipulasi)<br />-Variabel terikat (respon)<br />-Variabel kontrol (tetap)<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-perbedaan-antara-variabel-bebas-dengan-variabel-terikat">
+                            36. Tuliskan perbedaan antara variabel bebas dengan variabel terikat!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Variabel bebas adalah variabel yang memengaruhi variabel lainnya (mampu berdiri sendiri), sedangkan variabel terikat adalah variabel yang dipengaruhi variabel lain (membutuhkan variabel lain agar dapat dimaknai)</p><p></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu&gt;&lt;</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-3-judul-penelitian-sosiologi-dengan-membedakan-variabel-bebas-dan-variabel-terikat">
+                            37. buatlah 3 judul penelitian sosiologi dengan membedakan variabel bebas dan variabel terikat</h2><br />
+                        pengaruh durasi menonton tv dengan kepekaan anak. <br />pengaruh bermain game dengan konsentrasi siswa<br />pengaruh makan banyak terhadap kinerja karyawan<br />
+                                            <h2 class="ez-toc-section" id="jawab7-sebutkan-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-terkontrolljawabdinolari%e2%80%8b">
+                            38. Jawab:7. Sebutkan perbedaan variabel bebas, variabel terikat dan variabel terkontrollJawabdinolari​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>1. Variabel Bebas (Independen)</p><p>Variablel yang pertama adalah variabel bebas, pengertian dari variabel bebas adalah variabel yang mempengaruhi variabel terikat yang sengaja dibuat berbeda, atau variabel bebas adalah tipe variabel yang menjelaskan atau mempengaruhi variabel lain.</p><p></p><p>2. Variabel Terikat (Dependen)</p><p>Variabel yang kedua yakni variabel terikat, pengertian dari variabel terikat adalah variabel yang dipengaruhi oleh variabel bebas, atau variabel terikat adalah tipe variabel yang dijelaskan atau dipengaruhi oleh variabel bebas. Atau secara lebih plongnya variabel terikat adalah variabel yang tengah di amati atau di observasi.</p><p></p><p>3. Variabel Kontrol</p><p>Variabel yang terakhir yakni variabel kontrol, pengertian dari variabel kontrol adalah variabel yang dibuat sama untuk semua perlakuan, artinya variabel kontrol adalah variabel yang mengontrol keadaan atau variabel pembanding terhadap variabel yang ditelah di uji.</p><p></p><p>CONTOH</p><p>Pak guru meminta andi untuk melakukan percobaan terhadap kacang hijau dimana andi diminta untuk mencari tau pengaruh lama perendaman biji kacang hijau. Pada percobaan terdapat 5 gelas yang nantinya akan di isi dengan kacang hijau, namun pada gelas a,b,c,d di isi dengan air dengan takaran yang berbeda-beda, sedangkan gelas e tidak di isi dengan air, setelah itu biji kacang hijau yang berada dilima gelas itu dibiarkan selama 3 hari.</p><p></p><p>Jawaban</p><p>Variabel Bebas : Variabel bebas dari contoh diatas adalah lama perendaman biji kacang hijau</p><p>Variabel Terikat : Pertumbuhan biji kacang hijau pada gelas yang terisi air dan yang tidak terisi air</p><p>Variabel Kontrol : Variabel kontrolnya yakni biji kacang hijau yang berada di gelas e.</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p><strong>maaf</strong><strong> </strong><strong>kalo</strong><strong> </strong><strong>salah</strong><strong>.</strong><strong>.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-variabel-bebas-dan-terikat-serta-contohnya">
+                            39. Apa Perbedaan Variabel Bebas dan Terikat serta contohnya :) </h2><br />
+                        Variabel bebas atau biasa disebut jg dgn variabel independen yaitu tipe variabel yg menjelaskan atau mempengaruhi variabel lain sedangkan variabel terikat adalah variabel yg dijelaskan atau dipengaruhi dari variabel independen<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-variabel-bebas-variabel-terikat-dan-variabel-kontrol">
+                            40. Jelaskan perbedaan variabel bebas variabel terikat dan variabel kontrol</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>-variabel bebas adalah variabel penyebab dalam percobaan.</p><p>-variabel terikat adalah variabel yang tengah di observasi. </p><p>-Variabel kontrol adalah bariabel yang dibuat sama untuk semua perlakuan.</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p></p><p>maaf kalo salah)</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/SGC_d7O7_Eg?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>biologi</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-artikel-yang-referensi-nya-dari-jurnal.html">Contoh Artikel Yang Referensi Nya Dari Jurnal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-kumpulan-puisi-berjudul-puisi.html">Contoh Kumpulan Puisi Berjudul Puisi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-pangan-dan-gizi.html">Contoh Jurnal Pangan Dan Gizi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-laporan-karya-tulis-ilmiah-keperawatan-d3.html">Contoh Laporan Karya Tulis Ilmiah Keperawatan D3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-depan-jurnal-perhotelan.html">Contoh Depan Jurnal Perhotelan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-kualitatif-studi-etnografi-pdf-unnair.html">Contoh Jurnal Kualitatif Studi Etnografi Pdf Unnair</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-penulisan-judul-skripsi-yang-benar.html">Contoh Penulisan Judul Skripsi Yang Benar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-list-tabel-jurnal-untuk-tesis.html">Contoh List Tabel Jurnal Untuk Tesis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-studi-kelayakan-pengembangan-klinik.html">Contoh Judul Studi Kelayakan Pengembangan Klinik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-perbandingan-retorika.html">Contoh Jurnal Perbandingan Retorika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-instasi-asal-penulis-jurnal.html">Contoh Instasi Asal Penulis Jurnal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-skripsi-ppkn-kualitatif.html">Contoh Judul Skripsi Ppkn Kualitatif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-manuskrip-karya-ilmiah.html">Contoh Manuskrip Karya Ilmiah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-spk-produksi-dan-pemasaran-metode-saw.html">Contoh Jurnal Spk Produksi Dan Pemasaran Metode Saw</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-karya-ilmiah-sd-kelas-3.html">Contoh Karya Ilmiah Sd Kelas 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-hikayat-tentang-cinta.html">Contoh Judul Hikayat Tentang Cinta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-farmasi-smk.html">Contoh Jurnal Farmasi Smk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-soal-akuntansi-dari-jurnal-umum-sampai-jurnal-pembalik-pdf.html">Contoh Soal Akuntansi Dari Jurnal Umum Sampai Jurnal Pembalik Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/definisi-karya-tulis-ilmiah.html">Definisi Karya Tulis Ilmiah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-analisis-jurnal-mengenai-pemikiran-penulis-jurnal.html">Contoh Analisis Jurnal Mengenai Pemikiran Penulis Jurnal</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://jurnalskripsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://jurnalskripsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

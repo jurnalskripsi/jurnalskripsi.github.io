@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menentukan Variabel Bebas - BELAJAR</title>
+    <meta name="description" content="Menentukan Variabel Bebas, , , , , , , 0, , , , , , 0, menentukan-variabel-bebas, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Menentukan Variabel Bebas - BELAJAR" />
+    <meta property="og:description" content="Menentukan Variabel Bebas, , , , , , , 0, , , , , , 0, menentukan-variabel-bebas, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menentukan Variabel Bebas - BELAJAR" />
+    <meta name="twitter:description" content="Menentukan Variabel Bebas, , , , , , , 0, , , , , , 0, menentukan-variabel-bebas, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://jurnalskripsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://jurnalskripsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://jurnalskripsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://jurnalskripsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://jurnalskripsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://jurnalskripsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://jurnalskripsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://jurnalskripsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Menentukan Variabel Bebas</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ilminafiah27</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Menentukan+Variabel+Bebas" alt="Menentukan Variabel Bebas">
+                    </div>
+                    <p></p>
+                    <p>bagaimana menentukan variabel bebas dan kontrol?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-menentukan-variabel-bebas-dan-kontrol">1.
+                                            bagaimana menentukan variabel bebas dan kontrol?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-bebas-dan-variabel-terikat-dalam-statistik">2.
+                                            Bagaimana cara menentukan variabel bebas dan variabel terikat dalam statistik ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-menentukan-variabel-terikat-dan-variabel-bebas-dalam-analisa-korelasi">3.
+                                             Bagaimana menentukan variabel terikat dan variabel bebas dalam analisa korelasi ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#angga-ingin-mengetahui-apakah-waktu-untuk-mendidihkan-air-akan-lebih-cepat-apabila-airnya-diberikan-garam-terlebih-dahulu-atau-tidak-bantulah-dia-3-menentukan-tujuan-percobaan-4-menentukan-variabe">4.
+                                            Angga ingin mengetahui apakah waktu untuk mendidihkan air akan lebih cepat apabila airnya diberikan garam terlebih dahulu atau tidak. Bantulah dia: 3. menentukan tujuan percobaan 4. menentukan variabel bebas, variabel terikat, dan variabel bebas dalam percobaan tersebut.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#harga-sebuah-tanah-di-kota-jakarta-permeter-persegi-adalah-300-000-tentukan-a-bentuk-fungsi-untuk-menentukan-harga-tanah-m2-b-tentukan-variabel-bebas-dan-variabel-tidak-bebas-dari-kejadian-itu">5.
+                                            Harga sebuah tanah di kota jakarta permeter persegi adalah 300 000 tentukan A Bentuk fungsi untuk menentukan harga tanah m2 B tentukan variabel bebas dan variabel tidak bebas dari kejadian itu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-hipotesis-merupakan-perkiraan-sementara-atau-dugaan-dari-jawaban-terhadap-tujuan-percobaan-yang-akan-diselidiki-sebuah-hipotesis-yang-baik-harus-memenuhi-syarat-a-bersifat-logis-b-berdasar-da">6.
+                                            4. Hipotesis merupakan perkiraan Sementara atau dugaan dari Jawaban terhadap tujuan Percobaan yang akan diselidiki. Sebuah hipotesis yang baik harus memenuhi syarat.... a. bersifat logis b berdasar data ilmiah e logis dan berasal dari aromsi Pribadi d bersifat logis dan berdasar data ilmiah 5. Suatu Variabel merupakan faktor, kondisi, unsur yang dapat berupa angka atau Jenis-Jenis yang menentukan dalam suatu Percobaan, Salah Satu macam variabel yang dianggap dapat menentukan variabel lainya adalah a variabel bebas b. variabel terikat C/Variabel kontrol d./variabel antara 6. gejala yang muncul atau berubah dalam Pola yang teratur dan biasa diamati atav karena berubahnya variabel lain merupakan karakteristik dari variabel... a. bebas b. terikat c. kontrol d- antara tolong isi yya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-bebasvariabel-kontrolvariabel-terikat-dan-hipotesis">7.
+                                            Bagaimana cara menentukan variabel bebas,variabel kontrol,variabel terikat dan hipotesis? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-merancang-suatu-penelitian-seorang-peneliti-harus-menentukan-faktor-peubah-variabel-salah-satu-variabel-yang-harus-ditentukan-adalah-variabel-bebas-variabel-bebas-adalah">8.
+                                            Dalam merancang suatu penelitian, seorang peneliti harus menentukan faktor peubah / variabel. Salah satu variabel yang harus ditentukan adalah variabel bebas. Variabel bebas adalah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengeluaran-keluarga-pak-anton-sebulan-dua-kali-gaji-pak-anton-tentukanlah-a-bentuk-fungsi-untuk-menentukan-pengeliaran-keluarga-pak-anton-b-variabel-bebas-dan-variabel-tidak-bebas">9.
+                                            pengeluaran keluarga pak Anton sebulan dua kali gaji pak Anton tentukanlah A. bentuk fungsi untuk menentukan pengeliaran keluarga pak Anton B. variabel bebas dan variabel tidak bebas</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suatu-penelitian-berjudul-pengaruh-macam-macam-pupuk-kandang-terhadap-pertumbuhan-dan-perkembangan-tanaman-kedelai-macam-macam-pupuk-kandang-yang-digunakan-meliputi-kotoran-ayam-kotoran-sapi-kot">10.
+                                            Suatu penelitian berjudul " PENGARUH MACAM-MACAM PUPUK KANDANG TERHADAP PERTUMBUHAN DAN PERKEMBANGAN TANAMAN KEDELAI."
+Macam-macam pupuk kandang yang digunakan meliputi kotoran ayam, kotoran sapi, kotoran kuda dan kotoran kambing.
+Tugas ananda yaitu menentukan/ menuliskan
+a. Variabel bebas dan variabel terikatnya
+b. Variabel kontrol (kelompok kontrol) dan kelompok perlakuanya.
+c. Rumusan masalahnya
+d. Hipotesinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-sebuah-percobaan-pasti-terdapat-suatu-variabel-atau-faktor-variabel-yang-dianggap-menentukan-variabel-lainnya-disebuta-variabel-bebas-b-variabel-terikatc-variabel-kontrold-variabel-tunggal">11.
+                                            dalam sebuah percobaan pasti terdapat suatu variabel atau faktor variabel yang dianggap menentukan variabel lainnya disebutA. variabel bebas B. variabel terikatC. variabel kontrolD. variabel tunggal ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-suatu-penelitian-seorang-peneliti-menentukan-variabel-penelitian-variabel-yang-dapat-diubah-dalam-penelitian-disebut-a-variabel-bebas-b-variabel-terikat-c-variabel-kontrol-d-variabel-terkendali">12.
+                                            dalam suatu penelitian seorang peneliti menentukan variabel penelitian variabel yang dapat diubah dalam penelitian disebut a variabel bebas b variabel terikat c variabel kontrol d variabel terkendali e variabel berpengaruh​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cermati-bacaan-di-bawah-inisetelah-kamu-cermati-bacaan-di-bawah-ini-dan-buatlah-rangcangan-penelitian-sederhana-tentang-mengawetkan-buah-bacaansebelum-kamu-melakukan-penelitian-kamu-sering-mendapatk">13.
+                                            Cermati Bacaan di bawah iniSetelah kamu cermati bacaan di bawah ini, dan buatlah rangcangan penelitian sederhana tentang mengawetkan buah.BACAANSebelum kamu melakukan penelitian, kamu sering mendapatkan bahwa buah-buahan mudah busuk. Kamu akan berfikir bagaimanakah agar buah tidak dapat cepat busuk?Kamu mencari informasi tentang bagaimana cara menghambat pembusukan buah yang ada. Setelah mendapatkan informasi, kamu menentukan bahwa bahan tumbuh-tumbuhan diantaranya dapat menghambat pembusukan. Setelah itu dilakukanlah penelitian dengan sekasama, kamu menentukan beberapa hal, diambil buah yang besarnya dan beratnya sama, bahan yang digunakan pengawet adalah tanaman lidah buaya yang diambil lendirnya dan dibuat beberapa konsentrasi yang digunakan.Untuk jelasnya kamu harus:    menentukan variabel bebas    menentukan variabel terikat    menentukan variabel kontrol    tulislah permasalahan yang dihadapi    tulislah hipotesatolong jawab dengan benar ya....  terimakasih </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#peristiwa-perubahan-benda-dan-menentukan-variabel-bebas-dan-terikat">14.
+                                            peristiwa perubahan benda dan menentukan variabel bebas dan terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bambam-tamvan-adalah-siswa-kelas-12-jurusan-mipa-dari-sma-negeri-62-ia-diberi-tugas-untuk-melakukan-penelitian-ilmiah-dengan-judul-%e2%80%9cpengaruh-intensitas-cahaya-matahari-terhadap-panjang-kecam">15.
+                                            Bambam Tamvan adalah siswa kelas 12 jurusan MIPA dari SMA Negeri +62. Ia diberi tugas untuk melakukan penelitian ilmiah dengan judul “Pengaruh Intensitas Cahaya Matahari Terhadap Panjang Kecambah dan Jumlah Daun Tanaman Kacang Hijau”. Sebelum melakukan penelitian, Bambam Tamvan di haruskan untuk menentukan dulu Variabel Terikat, Variabel Bebas dan Variabel Kontrol dari judul penelitian tersebut. Bantulah Bambam Tamvan untuk menentukan :
+a. Variabel Bebas
+b. Variabel Terikat
+C. Variabel Kontrol</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-kita-menentukan-variabel-kontrol-bebas-dan-terikatmohon-bantuannya">16.
+                                            bagaimana cara kita menentukan variabel kontrol, bebas dan terikat?
+mohon bantuannya:)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-jawab-ya-dalam-merancang-eksperimen-peniliti-harus-menentukan-variabel-kontrol-sebabvariabel-kontrol-adalah-variabel-yang-berubah-jika-variabel-bebasnya-diubah">17.
+                                            Tolong bantu jawab ya. Dalam merancang eksperimen, peniliti harus menentukan variabel kontrol.
+SEBAB
+Variabel kontrol adalah variabel yang berubah jika variabel bebasnya diubah.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-permasalahan-dan-menentukan-variabel-bebas-variabel-terikal-variabel-kontrol-terkendali">18.
+                                            membuat permasalahan dan menentukan :
+* Variabel bebas
+* Variabel terikal
+* Variabel kontrol / terkendali</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-bebas-dan-terikat-dan-berikan-1-contoh">19.
+                                            Bagaimana cara menentukan variabel bebas dan terikat? dan berikan 1 contoh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-contoh-soal-tentang-menentukan-variabel-bebas-variabel-terikat">20.
+                                            2 contoh soal tentang menentukan variabel bebas/ variabel terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#37-variabel-bebas-dalam-penelitian-ilmiah-adalah-a-faktor-hal-atau-unsur-yang-dianggap-dapat-menentukan-variabel-lainnya-b-gejala-yang-muncul-atau-berubah-dalam-pola-yang-teratur-dan-biasa-di">21.
+                                            37. Variabel bebas dalam penelitian ilmiah adalah.... a. faktor, hal, atau unsur yang dianggap dapat menentukan variabel lainnya b. gejala yang muncul atau berubah dalam pola yang teratur dan biasa diamati atau karena berubahnya variabel lain c. faktor yang dibuat tetap sama selama percobaan d. faktor pendukung selama percobaan halok memiliki panjang lebar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#budi-rani-dan-amir-ingin-mengetahui-pengaruh-perendaman-terhadap-pertumbuhan-biji-kaca-hijau-bantulah-mereka-menentukan-variabel-variabel-dalam-percobaan-mereka-variabel-kontrolvariabel-terik">22.
+                                            Budi, Rani, dan Amir ingin mengetahui pengaruh perendaman terhadap pertumbuhan biji kaca hijau. Bantulah mereka:  -. Menentukan variabel-variabel dalam percobaan mereka.Variabel Kontrol:Variabel terikat  :Variabel bebas:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-harga-sebuah-tanah-di-kota-jakarta-per-m2-adalah-rp300-00000-tentukanlah-a-bentuk-fungsi-untuk-menentukan-harga-tanah-per-m2-b-variabel-bebas-dan-variabel-tak-bebas-dari-kejadian-itu">23.
+                                            1. Harga sebuah tanah di kota Jakarta per m2 adalah Rp300.000,00. Tentukanlah 
+a. bentuk fungsi untuk menentukan harga tanah per m2; 
+b. variabel bebas dan variabel tak bebas dari kejadian itu.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-2-contoh-judul-penelitian-eksperimen-yang-menentukan-variabel-bebas-dan-terikat">24.
+                                            buatlah 2 contoh judul penelitian eksperimen yang menentukan variabel bebas dan terikat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-kontrol-bebas-dan-terikat">25.
+                                            bagaimana cara menentukan variabel kontrol, bebas dan terikat?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#percobaan-menentukan-kadar-lemak-pada-berbagai-jenis-makanan-a-hipotesis-b-variabel-bebas-c-variabel-terikat-d-variabel-kontrol-%e2%80%8b">26.
+                                            Percobaan = menentukan kadar lemak pada berbagai jenis makanan A. Hipotesis = B. Variabel bebas = C. Variabel terikat = D. Variabel kontrol =​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menentukan-pengaruh-pemberian-pupuk-kompos-terhadap-pertumbuhan-tanaman-seorang-siswa-akan-melakukan-eksperimen-dengan-menggunakan-dua-pot-yang-berisi-tanaman-yang-sama-dia-menambahkan-pupuk">27.
+                                            Untuk menentukan pengaruh pemberian pupuk kompos terhadap pertumbuhan tanaman,  seorang siswa akan melakukan eksperimen dengan menggunakan dua pot yang berisi tanaman  yang sama. Dia menambahkan pupuk kompos pada pot pertama dan tidak menambahkan pupuk  pada pot kedua. Setelah beberapa hari, dia mengukur tinggi kedua tanaman. Dari eksperimen  tersebut, tentukan variabel bebas, variabel terikat, dan variabel kontrolnya? Jawab dong... </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-kontrolvariabel-bebas-dan-variabel-terikat-dalam-suatu-judul-penelitian%e2%80%8b">28.
+                                            bagaimana cara menentukan variabel kontrol,variabel bebas dan variabel terikat dalam suatu judul penelitian?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-menentukan-variabel-terikat-dan-variabel-bebas-dalam-analisa-korelasi">29.
+                                            Bagaimana menentukan variabel terikat dan variabel bebas dalam analisa korelasi ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-bebas-dan-variabel-terikat-dalam-judul-percobaan-pengaruh-cahaya-matahari-terhadap-perkecambahan-biji-kacang-tanah-trims">30.
+                                            bagaimana cara menentukan variabel bebas dan variabel terikat dalam judul percobaan pengaruh cahaya matahari terhadap perkecambahan biji kacang tanah ? 
+trims</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menentukan-pengaruh-pemberian-pupuk-kompos-terhadap-pertumbuhan-tanaman-seorang-siswa-akan-melakukan-eksperimen-dengan-menggunakan-dua-pot-yang-berisi-tanaman-yang-sama-dia-menambahkan-pupuk-kom">31.
+                                            untuk menentukan pengaruh pemberian pupuk kompos terhadap pertumbuhan tanaman Seorang siswa akan melakukan eksperimen dengan menggunakan dua pot yang berisi tanaman yang sama dia menambahkan pupuk kompos pada pot pertama dan tidak menambahkan pupuk pada pot kedua setelah beberapa hari dia mengukur tinggi kedua tanaman dari eksperimen tersebut Tentukan variabel bebas Variabel terikat dan variabel kontrolnya????</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-variabel-kontrol-bebas-dan-terikat">32.
+                                            bagaimana cara menentukan variabel kontrol, bebas dan terikat?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-menentukan-obyek-abiotikbiotik-2-menentukan-sikap-ilmiah-yg-ditunjukan-dlm-percobaan-3-jenis2-variabel-bebas-dan-artinya-dalam-percobaan-4-menentukan-jenis-data-kualitatif-kuantitatif">33.
+                                            1. menentukan obyek abiotik/biotik...2.menentukan sikap ilmiah yg ditunjukan dlm percobaan...3. jenis2 variabel bebas dan artinya dalam percobaan...4. menentukan jenis data kualitatif/ kuantitatif...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menentukan-rumusan-masalahhipotesisvariabel-bebasterikat">34.
+                                            menentukan rumusan masalah,hipotesis,variabel bebas,terikat </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bgaimana-cara-menentukan-variabel-bebasterikatkontrol">35.
+                                            Bgaimana cara menentukan variabel bebas,terikat,kontrol</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#siswa-dapat-menentukan-rumusan-masalah-hipotesis-variabel-bebas-variabel-terikat-dari-sebuah-penelitian-ilmiah-apa-yang-dimaksud-dengan-variabel-di-dalam-sebuh-penelitian">36.
+                                            Siswa dapat menentukan rumusan masalah, hipotesis, variabel bebas, variabel terikat dari sebuah penelitian ilmiah, apa yang dimaksud dengan variabel di dalam sebuh penelitian?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menentukan-variabel-bebas-dan-variabel-terkait-pada-penelitian-pengaruh-rangsangan-cahaya-matahari-terhadap-gerak-pada-tumbuhan">37.
+                                            menentukan variabel bebas dan variabel terkait pada penelitian pengaruh rangsangan cahaya matahari terhadap gerak pada tumbuhan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menentukan-variasi-dari-variabel-bebas-banyaknya-ulangan-macam-variabel-yang-terikat-yang-diukur%e2%80%8b">38.
+                                            menentukan variasi dari variabel bebas, banyaknya ulangan, macam variabel yang terikat yang diukur​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-kita-menentukan-variabel-kontrol-bebas-dan-terikatmohon-bantuannya">39.
+                                            bagaimana cara kita menentukan variabel kontrol, bebas dan terikat?
+mohon bantuannya:)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menentukan-variabel-bebasterikatkontrol-pengaruh-pupuk-urea-terhadap-pertumbuhan-bunga-matahari">40.
+                                            Menentukan variabel bebas,terikat,kontrol pengaruh pupuk urea terhadap pertumbuhan bunga matahari</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="bagaimana-menentukan-variabel-bebas-dan-kontrol">
+                            1. bagaimana menentukan variabel bebas dan kontrol?</h2><br />
+                         misal gelas 1 tanpa penambahan zat lain gelas 2 minyak gelas 3 air sabun<br /><br />Variabel bebas : tiap sample diberi perlakuan berbeda yaitu gelas 2 dan 3<br /><br />Variabel kontrol : satu sample awal belum ditambahkan zat-zat lain yaitu gelas 1<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-bebas-dan-variabel-terikat-dalam-statistik">
+                            2. Bagaimana cara menentukan variabel bebas dan variabel terikat dalam statistik ? </h2><br />
+                        Variabel bebas dan terikat atau disebut juga variabel independen dan dependen adalah dua jenis variabel penelitian yang dapat digunakan peneliti untuk merumuskan hipotesis. Selain itu, juga dapat digunakan peneliti untuk membantu menyusun teori dan menjelaskan fenomena yang diteliti.<br /><br />-Variabel Bebas (Independent Variable), adalah variabel yang mempengaruhi variabel yang lain (variabel terikat).<br /><br />-Variabel Terikat (Dependent Variable), adalah variabel yang dipengaruhi oleh variabel lain (variabel bebas).<br /><br />Dua pengertian di atas memperlihatkan bahwa istilah dua jenis variabel ini muncul pada penelitian (study) pengaruh.<br /><br />Mengidentifikasi dan menentukan mana variabel bebas dan mana variabel terikat juga tak sesulit yang dibayangkan. Pertama-tama, kita perlu mengidentifikasi dulu penelitiannya tentang apa. Atau jika mau lebih detail, indetifikasi dulu pertanyaan penelitiannya seperti apa. Kita juga bisa mendeteksi jenis variabel melalui hipotesis yang dirumuskannya.<br /><br />Contoh 1, penelitian tentang Pengaruh Status Perkawinan Terhadap Tingkat Kepercayaan Diri Seseorang.<br /><br />Variabel bebasnya : status perkawinan. Variabel terikatnya : tingkat kepercayaan diri.<br /><br />Contoh 2, penelitian tentang Pengaruh Usia Pernikahan Terhadap Resiko Perceraian. Maka,<br /><br />Variabel bebasnya : usia pernikahan.<br /><br />Variabel terikatnya : resiko perceraian.<br /><br />DETAIL JAWABAN<br /><br />---------------------------<br /><br />MAPEL : MATEMATIKA<br /><br />KELAS : XII<br /><br />MATERI : STATISTIKA<br /><br />KATA KUNCI : VARIABEL BEBAS, VARIABEL TERIKAT<br /><br />KODE SOAL : 2<br /><br />KODE KATEGORISASI : 12.2.3 <br />
+                                            <h2 class="ez-toc-section" id="bagaimana-menentukan-variabel-terikat-dan-variabel-bebas-dalam-analisa-korelasi">
+                            3.  Bagaimana menentukan variabel terikat dan variabel bebas dalam analisa korelasi ?</h2><br />
+                        menggunakan hubungan simetris.<br /><br />*hubungan simentris adalah hubungan yg menyatakan sifat kebersamaan antara 2 variabel atau lebih,tetapi tidak menunjukkan hubungan sebab akibat atau saling mempengaruhi.Dalam bentuk hubungan ini tidak diketahui dengan pasti variabel bebas dan variabel terikat karena kedua variabel tidak saling mempengaruhi.<br /><br />Maaf ya klo salah.<br />
+                                            <h2 class="ez-toc-section" id="angga-ingin-mengetahui-apakah-waktu-untuk-mendidihkan-air-akan-lebih-cepat-apabila-airnya-diberikan-garam-terlebih-dahulu-atau-tidak-bantulah-dia-3-menentukan-tujuan-percobaan-4-menentukan-variabe">
+                            4. Angga ingin mengetahui apakah waktu untuk mendidihkan air akan lebih cepat apabila airnya diberikan garam terlebih dahulu atau tidak. Bantulah dia: 3. menentukan tujuan percobaan 4. menentukan variabel bebas, variabel terikat, dan variabel bebas dalam percobaan tersebut.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>tujuan percobaan: mengecek apakah mendidihkan air dengan garam lebih cepat daripada mendidihkan  air biasa</p><p>variabel: c= 102 degree celcius</p><p>a (air biasa dipanaskan)= 100</p><p>b (garam)=2</p><p>a + b = c</p><p>100 + 2 = 102 degree celcius</p><p></p><p>air biasa lebih pelan dari air garam (pemanasanya)</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah:( </p><p>jika tambah garam maka akan lebih cepat (kesimpulan)</p><br />
+                                            <h2 class="ez-toc-section" id="harga-sebuah-tanah-di-kota-jakarta-permeter-persegi-adalah-300-000-tentukan-a-bentuk-fungsi-untuk-menentukan-harga-tanah-m2-b-tentukan-variabel-bebas-dan-variabel-tidak-bebas-dari-kejadian-itu">
+                            5. Harga sebuah tanah di kota jakarta permeter persegi adalah 300 000 tentukan A Bentuk fungsi untuk menentukan harga tanah m2 B tentukan variabel bebas dan variabel tidak bebas dari kejadian itu</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>f(x)=H=300.000 x (x) </p><p>dimana </p><p>H=harga tanah</p><p>x=luas tanah </p><p></p><p>Variabel bebas adalah luas tanah </p><p>Variabel tak bebas (terikat) adalah harga tanah karena tergantung pada luas tanah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-hipotesis-merupakan-perkiraan-sementara-atau-dugaan-dari-jawaban-terhadap-tujuan-percobaan-yang-akan-diselidiki-sebuah-hipotesis-yang-baik-harus-memenuhi-syarat-a-bersifat-logis-b-berdasar-da">
+                            6. 4. Hipotesis merupakan perkiraan Sementara atau dugaan dari Jawaban terhadap tujuan Percobaan yang akan diselidiki. Sebuah hipotesis yang baik harus memenuhi syarat.... a. bersifat logis b berdasar data ilmiah e logis dan berasal dari aromsi Pribadi d bersifat logis dan berdasar data ilmiah 5. Suatu Variabel merupakan faktor, kondisi, unsur yang dapat berupa angka atau Jenis-Jenis yang menentukan dalam suatu Percobaan, Salah Satu macam variabel yang dianggap dapat menentukan variabel lainya adalah a variabel bebas b. variabel terikat C/Variabel kontrol d./variabel antara 6. gejala yang muncul atau berubah dalam Pola yang teratur dan biasa diamati atav karena berubahnya variabel lain merupakan karakteristik dari variabel... a. bebas b. terikat c. kontrol d- antara tolong isi yya​</h2><br />
+                        Sebuah<strong> </strong>hipotesis yang baik harus memenuhi syarat<strong> (e) logis dan berasal dari aromsi pribadi.</strong><strong>Variabel </strong>yang dianggap dapat menentukan variabel lainya adalah<strong> (b) variabel terikat.</strong><strong>(a) variabel bebas.</strong><p><strong></strong></p><p><strong>Pembahasan:</strong></p><p><strong>Variabel </strong>adalah suatu yang dapat mengubah nilai. Variabel penelitian adalah suatu atribut/sifat/nilai dari orang, objek atau kegiatan yang mempunyai variabel tertentu yang di tetapkan oleh peneliti untuk di pelajari dan di tarik kesimpulan. Jenis variabel yaitu v<strong>ariabel bebas</strong> dan <strong>variabel terikat.</strong> Variabel bebas (variabel X) adalah variabel yang memberikan pengaruh pada variabel yang lain, sedangkan variabel terikat (variabel Y) adalah variabel yang dikenai pengaruh dari variabel bebas.</p><p><strong></strong></p><p><strong>Pelajari lebih lanjut</strong></p><p>Materi tentang variabel pada link https://brainly.co.id/tugas/20981476</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ1</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-bebasvariabel-kontrolvariabel-terikat-dan-hipotesis">
+                            7. Bagaimana cara menentukan variabel bebas,variabel kontrol,variabel terikat dan hipotesis? </h2><br />
+                        variabel bebas adalah faktor yang dibuat bervariasi<br />variabel terikat adalah faktor yang muncul akibat variabel bebas<br />variabel kontrol adalah faktor yang dibuat sama<br />contohnya : pengaruh suhu terhadap kecepatan fotosintesis pada tumbuhan air<br />variabel bebasnya : suhu (karena suhunya divariasikan) <br />variabel terikatnya : kecepatan fotosintesis (karena akibat dari suhu)<br />variabel kontrolnya : jenis tumbuhan air dan volume air (dibuat sama)<br />hipotesis itu dugaan semetara dari hasil mengumpulkan keterangan dan hipotesis itu berupa keterangan<br />contohnya : ada pengaruh suhu terhadap kecepatan fotosintesis <br />*semoga membantu :D<br />
+                                            <h2 class="ez-toc-section" id="dalam-merancang-suatu-penelitian-seorang-peneliti-harus-menentukan-faktor-peubah-variabel-salah-satu-variabel-yang-harus-ditentukan-adalah-variabel-bebas-variabel-bebas-adalah">
+                            8. Dalam merancang suatu penelitian, seorang peneliti harus menentukan faktor peubah / variabel. Salah satu variabel yang harus ditentukan adalah variabel bebas. Variabel bebas adalah </h2><br />
+                        Variabel bebas yakni variabel yang dapat kita manipulasi,sehingga akan menimbulkan pengaruh terhadap sekelompok objek penelitian. <br /><br />Semoga membantu ^_^…<br />
+                                            <h2 class="ez-toc-section" id="pengeluaran-keluarga-pak-anton-sebulan-dua-kali-gaji-pak-anton-tentukanlah-a-bentuk-fungsi-untuk-menentukan-pengeliaran-keluarga-pak-anton-b-variabel-bebas-dan-variabel-tidak-bebas">
+                            9. pengeluaran keluarga pak Anton sebulan dua kali gaji pak Anton tentukanlah A. bentuk fungsi untuk menentukan pengeliaran keluarga pak Anton B. variabel bebas dan variabel tidak bebas</h2><br />
+                        <p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>variabel bebas dan tidak bebas</p><br />
+                                            <h2 class="ez-toc-section" id="suatu-penelitian-berjudul-pengaruh-macam-macam-pupuk-kandang-terhadap-pertumbuhan-dan-perkembangan-tanaman-kedelai-macam-macam-pupuk-kandang-yang-digunakan-meliputi-kotoran-ayam-kotoran-sapi-kot">
+                            10. Suatu penelitian berjudul " PENGARUH MACAM-MACAM PUPUK KANDANG TERHADAP PERTUMBUHAN DAN PERKEMBANGAN TANAMAN KEDELAI."
+Macam-macam pupuk kandang yang digunakan meliputi kotoran ayam, kotoran sapi, kotoran kuda dan kotoran kambing.
+Tugas ananda yaitu menentukan/ menuliskan
+a. Variabel bebas dan variabel terikatnya
+b. Variabel kontrol (kelompok kontrol) dan kelompok perlakuanya.
+c. Rumusan masalahnya
+d. Hipotesinya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Variabel bebas : Pupuk Kandang</p><p>Variabel Terikat : Kecepatan Pertumbuhan tanaman kedelai</p><p></p><p>b. Variabel kontrol dan perlakuan:</p><p>- Pot </p><p>jumlah 4 buah dengan ukuran yang sama</p><p>- Tanah </p><p>masing masing pot diisi tanah dengan penuh</p><p>- Biji kacang kedelai</p><p>Tiap pot jumlah kacang kedelainya sama yaitu 2 biji</p><p>- Penyiraman</p><p>penyiraman dilakukan setiap pagi dan sore dengan takaran air satu gelas tiap pot</p><p></p><p>c. Rumusan Masalah</p><p>1. Apakah Peebedaan penggunaan pupuk kandang sebagai media tanam berpengaruh terhadap pertumbuhan dan perkembangan tanaman kedelai?</p><p>2. Apakah pupuk kandang dari kotoran Kambing merupakan pupuk yang paling menyuburkan tanaman?</p><p></p><p>d. Hipotesis</p><p>1. Perbedaan penggunaan pupuk kandang dapat mempengaruhi pertumbuhan dan perkembangan tanaman kacang kedelai</p><p>2. Pupuk kandang dari kotoran kambing merupakan pupuk yang paling menyuburkan tanaman</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-sebuah-percobaan-pasti-terdapat-suatu-variabel-atau-faktor-variabel-yang-dianggap-menentukan-variabel-lainnya-disebuta-variabel-bebas-b-variabel-terikatc-variabel-kontrold-variabel-tunggal">
+                            11. dalam sebuah percobaan pasti terdapat suatu variabel atau faktor variabel yang dianggap menentukan variabel lainnya disebutA. variabel bebas B. variabel terikatC. variabel kontrolD. variabel tunggal ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Variabel yang dianggap menentukan variabel lainnya dalam sebuah percobaan disebut "variabel bebas." Variabel bebas adalah variabel yang sengaja diubah atau dimanipulasi oleh peneliti dalam rangka mengamati dampak atau pengaruhnya terhadap variabel lain yang disebut variabel terikat. Variabel bebas adalah faktor yang dapat berpengaruh pada hasil percobaan.</p><p></p><p>Contoh sederhana: Jika seorang peneliti ingin menguji pengaruh jumlah cahaya (variabel bebas) terhadap pertumbuhan tanaman (variabel terikat), ia dapat mengatur berapa lama tanaman tersebut menerima cahaya sehari. Dalam hal ini, jumlah cahaya adalah variabel bebas yang diubah untuk melihat bagaimana itu memengaruhi pertumbuhan tanaman (variabel terikat).</p><p></p><p>Variabel kontrol (pilihan C) adalah variabel yang tetap atau dikendalikan dalam percobaan untuk memastikan bahwa pengaruh variabel bebas terhadap variabel terikat dapat diukur dengan lebih akurat. Variabel tunggal (pilihan D) tidak memiliki arti khusus dalam konteks ini. <strong>Jadi, jawaban yang benar adalah:</strong></p><p></p><p><strong>Jadi, jawaban yang benar adalah:A. variabel bebas</strong></p><p></p><p><strong>Penjelasan:</strong></p><p><strong>Semoga Membantu (⁠^⁠^⁠)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="dalam-suatu-penelitian-seorang-peneliti-menentukan-variabel-penelitian-variabel-yang-dapat-diubah-dalam-penelitian-disebut-a-variabel-bebas-b-variabel-terikat-c-variabel-kontrol-d-variabel-terkendali">
+                            12. dalam suatu penelitian seorang peneliti menentukan variabel penelitian variabel yang dapat diubah dalam penelitian disebut a variabel bebas b variabel terikat c variabel kontrol d variabel terkendali e variabel berpengaruh​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Variabel yang bisa diubah dalam penelitian disebut variabel bebas (A). </strong>Variabel bebas merupakan perlakuan yang dibuat berbeda oleh peneliti pada percobaan. Variabel ini sengaja dibuat berbeda untuk mengetahui pengaruh variabel bebas terhadap variabel terikat. </p><p></p><p><strong>Penjelasan:</strong></p><p>Variabel pada sebuah percobaan dibagi menjadi 4 jenis yaitu variabel bebas, terikat, kontrol, dan pengganggu. Variabel bebas atau yang disebut dengan variabel manipulasi adalah perlakuan yang berbeda-beda pada percobaan. Variabel terikat yaitu hasil dari variabel bebas, sedangkan variabel kontrol yaitu variabel yang dibuat sama oleh peneliti dan hanya digunakan sebagai pembanding. Adapun variabel pengganggu yaitu sesuatu yang tidak diinginkan akan tetapi mempengaruhi hasil percobaan yang dilakukan. </p><p></p><p>Pelajari lebih lanjut materi tentang variabel dalam percobaan pada https://brainly.co.id/tugas/25044826.</p><p></p><p>#BelajarBersamaBrainly</p><br />
+                                            <h2 class="ez-toc-section" id="cermati-bacaan-di-bawah-inisetelah-kamu-cermati-bacaan-di-bawah-ini-dan-buatlah-rangcangan-penelitian-sederhana-tentang-mengawetkan-buah-bacaansebelum-kamu-melakukan-penelitian-kamu-sering-mendapatk">
+                            13. Cermati Bacaan di bawah iniSetelah kamu cermati bacaan di bawah ini, dan buatlah rangcangan penelitian sederhana tentang mengawetkan buah.BACAANSebelum kamu melakukan penelitian, kamu sering mendapatkan bahwa buah-buahan mudah busuk. Kamu akan berfikir bagaimanakah agar buah tidak dapat cepat busuk?Kamu mencari informasi tentang bagaimana cara menghambat pembusukan buah yang ada. Setelah mendapatkan informasi, kamu menentukan bahwa bahan tumbuh-tumbuhan diantaranya dapat menghambat pembusukan. Setelah itu dilakukanlah penelitian dengan sekasama, kamu menentukan beberapa hal, diambil buah yang besarnya dan beratnya sama, bahan yang digunakan pengawet adalah tanaman lidah buaya yang diambil lendirnya dan dibuat beberapa konsentrasi yang digunakan.Untuk jelasnya kamu harus:    menentukan variabel bebas    menentukan variabel terikat    menentukan variabel kontrol    tulislah permasalahan yang dihadapi    tulislah hipotesatolong jawab dengan benar ya....  terimakasih </h2><br />
+                        <p>Virus adalah makhluk misteri yang merupakan peralihan antara makhluk hidup dan makhluk tak hidup. Virus telah disebut sejak zaman kuno. Namun, asal organisme kecil yang membawa informasi genetik yang hanya dalam mantel protein masih belum diketahui. Virus merupakan makhluk yang keberadaanya banyak mempengaruhi kehidupan manusia, walaupun masih banyak para ahli yang memiliki penafsiran berbeda tentang virus ini, ada yang mengatakan bahwa ia makhluk hidup dan tidak sedikit juga yang tidak setuju.
+</p><p>
+</p><p>Virus ditemukan pertamakali oleh ilmuwan Jerman, Adolf Mayer, pada tahun 1883 ketika sedang meneliti penyebab penyakit mosaik pada tanaman tembakau. Istilah virus berasal dari bahasa latin yang berarti racun. Virus ditemukan pertamakali oleh ilmuwan Jerman, Adolf Mayer, pada tahun 1883 ketika sedang meneliti penyebab penyakit mosaik pada tanaman tembakau. Penyakit mosaik tersebut menyebabkan bercak-bercak pada daun tembakau sehingga menghambat pertumbuhan tanaman, oleh karena itu disebut “mosaik”.
+</p><p>
+</p><p>Adolf Mayer berhasil memindahkan penyakit tersebut dari tanaman yang sakit ke tanaman lain yang masih sehat dengan menyemprotkan getah yang diekstraksi dari daun tanaman sakit ke tanaman sehat. Tanaman sehat itupun menjadi sakit. Melalui pengamatan di mikroskop, Mayer tidak dapat melihat bentuk bakteri penyebab penyakit tersebut. Mayer menduga bahwa penyakit mosaik tersebut disebabkan oleh bakteri yang lebih kecil dari biasanya, yang tidak dapat diamati dengan mikroskop biasa.</p><br /><br />
+                                            <h2 class="ez-toc-section" id="peristiwa-perubahan-benda-dan-menentukan-variabel-bebas-dan-terikat">
+                            14. peristiwa perubahan benda dan menentukan variabel bebas dan terikat</h2><br />
+                        variabel bebas=-matahari,suhu dingin<br />variabel terikat=pakaian yg dijemur,tumbuhan yg dikeringkan,lilin yg terbakar<br />
+                                            <h2 class="ez-toc-section" id="bambam-tamvan-adalah-siswa-kelas-12-jurusan-mipa-dari-sma-negeri-62-ia-diberi-tugas-untuk-melakukan-penelitian-ilmiah-dengan-judul-%e2%80%9cpengaruh-intensitas-cahaya-matahari-terhadap-panjang-kecam">
+                            15. Bambam Tamvan adalah siswa kelas 12 jurusan MIPA dari SMA Negeri +62. Ia diberi tugas untuk melakukan penelitian ilmiah dengan judul “Pengaruh Intensitas Cahaya Matahari Terhadap Panjang Kecambah dan Jumlah Daun Tanaman Kacang Hijau”. Sebelum melakukan penelitian, Bambam Tamvan di haruskan untuk menentukan dulu Variabel Terikat, Variabel Bebas dan Variabel Kontrol dari judul penelitian tersebut. Bantulah Bambam Tamvan untuk menentukan :
+a. Variabel Bebas
+b. Variabel Terikat
+C. Variabel Kontrol</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B variabel terikat</p><p></p><p><strong>Penjelasan:</strong></p><p>karena dari pengaruh cahaya matahari terhadap kecambah,jumlah daun tanaman </p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-kita-menentukan-variabel-kontrol-bebas-dan-terikatmohon-bantuannya">
+                            16. bagaimana cara kita menentukan variabel kontrol, bebas dan terikat?
+mohon bantuannya:)</h2><br />
+                        1.  VARIABEL BEBAS / VARIABEL INDEPENDEN (disebut juga variabel pengaruh, variabel perlakuan, penyebab, treatment, dan sebagainya), adalah variabel yang bila dalam suatu saat berada bersama variabel lain, variabel yang terakhir ini berubah (atau diduga berubah) dalam variasinya. atau bisa juga diartikan sebagai variabel yang mengakibatkan perubahan bagi variabel terikat.<br /><br />2. VARIABEL TERIKAT / VARIABEL DEPENDEN: variabel yang berubah karena variabel bebas (disebut juga variabel terpengaruh, variabel tak bebas/ terikat, efek, dan sebagainya. <br />atau bisa juga diartikan sebagai variable yang menjadi akibat karena adanya variable bebas<br /><br />contoh :<br /><br />pengaruh MSG terhadap kesehatan manusia.<br /><br />variabel bebasnya : MSG<br />variabel terikatnya : kesehatan manusia<br /><br />3.VARIABEL KONTROL : variable yang dikendalikan atau dibuat konstan sehingga pengaruh variable bebas terhadap variable terikat tidak dipengaruhi oleh factor luar yang tidak diteliti. <br /><br />semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-jawab-ya-dalam-merancang-eksperimen-peniliti-harus-menentukan-variabel-kontrol-sebabvariabel-kontrol-adalah-variabel-yang-berubah-jika-variabel-bebasnya-diubah">
+                            17. Tolong bantu jawab ya. Dalam merancang eksperimen, peniliti harus menentukan variabel kontrol.
+SEBAB
+Variabel kontrol adalah variabel yang berubah jika variabel bebasnya diubah.</h2><br />
+                        salah dan benar ( D )<br /><br />yang di tentukan itu variebel bebas, sedangkan variebel terkontrol itu hasil eksperimen dari variebel bebas tadi<br />
+                                            <h2 class="ez-toc-section" id="membuat-permasalahan-dan-menentukan-variabel-bebas-variabel-terikal-variabel-kontrol-terkendali">
+                            18. membuat permasalahan dan menentukan :
+* Variabel bebas
+* Variabel terikal
+* Variabel kontrol / terkendali</h2><br />
+                        variabel yang tidak terikat<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-bebas-dan-terikat-dan-berikan-1-contoh">
+                            19. Bagaimana cara menentukan variabel bebas dan terikat? dan berikan 1 contoh</h2><br />
+                        variabel bebas : variabel yang memengaruhi variabel terikt dengan sengaja dibuat berbeda. contoh : dosis pupuk.<br />variabel terikat : variabel yang dipengauhi variabel bebas. contoh : tingkat pertumbuhan<br />variabel yang bisa kita ubah ubah dalam kepentingan penelitian variabel terikat adalah hasil penelitian tersebut setelah memadukan variabel bebas dan terikat,variabel terikat muncul karena perbedaan perlakuan pada variabel bebas<br />contoh variabel bebas : misalnya pot 1 dikasih air setiap hari,pot kedua dikasih air setiap 3hr, pot ketiga dikasih air 1minggu 
+sekali... jadi disini yang jadi variable bebasnya adalah intensitas 
+memberi airnya <br /><br />
+variable terikatnya adalah hasilnya, jadi ternyata kalau dikasih air 
+setiap hari setelah 2minggu misalnya kacangnya tingginya jadi 15cm, 
+kemudian y 3hr sekali ternyata jadi 10cm, yg 1minggu sekali cuma 5cm.. 
+nah disini yang jadi variable terikatnya adalah pertumbuhan kacangnya  <br /><br />
+                                            <h2 class="ez-toc-section" id="2-contoh-soal-tentang-menentukan-variabel-bebas-variabel-terikat">
+                            20. 2 contoh soal tentang menentukan variabel bebas/ variabel terikat</h2><br />
+                        variabel bebas variabel yang bebas atau tak terhitung dgn yg lain ya dan tdk ada kita nya<br />variabel terikat,variabel yang sangat berkaitan satu samaaa lain<br />
+                                            <h2 class="ez-toc-section" id="37-variabel-bebas-dalam-penelitian-ilmiah-adalah-a-faktor-hal-atau-unsur-yang-dianggap-dapat-menentukan-variabel-lainnya-b-gejala-yang-muncul-atau-berubah-dalam-pola-yang-teratur-dan-biasa-di">
+                            21. 37. Variabel bebas dalam penelitian ilmiah adalah.... a. faktor, hal, atau unsur yang dianggap dapat menentukan variabel lainnya b. gejala yang muncul atau berubah dalam pola yang teratur dan biasa diamati atau karena berubahnya variabel lain c. faktor yang dibuat tetap sama selama percobaan d. faktor pendukung selama percobaan halok memiliki panjang lebar​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Variabel bebas dalam penelitian ilmiah adalah A. faktor, hal, atau unsur yang dianggap dapat menentukan variabel lainnya. Variabel bebas adalah variabel yang diubah atau dimanipulasi dalam penelitian untuk melihat pengaruhnya terhadap variabel lain yang disebut variabel terikat. Variabel bebas juga disebut sebagai variabel independen.</p><p></p><p><strong>maaf </strong><strong>jika </strong><strong>salah </strong></p><br />
+                                            <h2 class="ez-toc-section" id="budi-rani-dan-amir-ingin-mengetahui-pengaruh-perendaman-terhadap-pertumbuhan-biji-kaca-hijau-bantulah-mereka-menentukan-variabel-variabel-dalam-percobaan-mereka-variabel-kontrolvariabel-terik">
+                            22. Budi, Rani, dan Amir ingin mengetahui pengaruh perendaman terhadap pertumbuhan biji kaca hijau. Bantulah mereka:  -. Menentukan variabel-variabel dalam percobaan mereka.Variabel Kontrol:Variabel terikat  :Variabel bebas:​</h2><br />
+                        Variabel Kontrol : <strong>J</strong><strong>enis </strong><strong>B</strong><strong>iji </strong><strong>K</strong><strong>a</strong><strong>c</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong> </strong><strong>H</strong><strong>i</strong><strong>j</strong><strong>a</strong><strong>u</strong>Variabel Terikat : <strong>Pertumbuhan Biji Kacang Hijau </strong>Variabel Bebas : <strong>Waktu Perendaman Biji Kacang Hijau </strong><br />
+                                            <h2 class="ez-toc-section" id="1-harga-sebuah-tanah-di-kota-jakarta-per-m2-adalah-rp300-00000-tentukanlah-a-bentuk-fungsi-untuk-menentukan-harga-tanah-per-m2-b-variabel-bebas-dan-variabel-tak-bebas-dari-kejadian-itu">
+                            23. 1. Harga sebuah tanah di kota Jakarta per m2 adalah Rp300.000,00. Tentukanlah 
+a. bentuk fungsi untuk menentukan harga tanah per m2; 
+b. variabel bebas dan variabel tak bebas dari kejadian itu.</h2><br />
+                        f(x) = H = 300.000 x (x)<br />dimana <br />H = harga tanah<br />x = luas tanah<br /><br />Variabel bebas adalah luas tanah<br />Variabel tak bebas (terikat) adalah harga tanah karena tergantung pada luas tanah<br /><br />
+                                            <h2 class="ez-toc-section" id="buatlah-2-contoh-judul-penelitian-eksperimen-yang-menentukan-variabel-bebas-dan-terikat">
+                            24. buatlah 2 contoh judul penelitian eksperimen yang menentukan variabel bebas dan terikat</h2><br />
+                        &gt; Manfaat Ubi Ungu Bagi Organ Reproduksi Manusia<br />&gt; Dampak Asam Klorida Bagi Kehidupan Makhluk Sosial<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-kontrol-bebas-dan-terikat">
+                            25. bagaimana cara menentukan variabel kontrol, bebas dan terikat?</h2><br />
+                        1. VARIABEL BEBAS / VARIABEL INDEPENDEN (disebut juga variabel pengaruh, variabel perlakuan, penyebab, treatment, dan sebagainya), adalah variabel yang bila dalam suatu saat berada bersama variabel lain, variabel yang terakhir ini berubah (atau diduga berubah) dalam variasinya. atau bisa juga diartikan sebagai variabel yang mengakibatkan perubahan bagi variabel terikat.<br />2. VARIABEL TERIKAT / VARIABEL DEPENDEN: variabel yang berubah karena variabel bebas (disebut juga variabel terpengaruh, variabel tak bebas/ terikat, efek, dan sebagainya.<br />atau bisa juga diartikan sebagai variable yang menjadi akibat karena adanya variable bebas<br />contoh :<br />pengaruh MSG terhadap kesehatan manusia.<br />variabel bebasnya : MSG<br />variabel terikatnya : kesehatan manusia<br />3.VARIABEL KONTROL : variable yang dikendalikan atau dibuat konstan sehingga pengaruh variable bebas terhadap variable terikat tidak dipengaruhi oleh factor luar yang tidak diteliti.<br />
+                                            <h2 class="ez-toc-section" id="percobaan-menentukan-kadar-lemak-pada-berbagai-jenis-makanan-a-hipotesis-b-variabel-bebas-c-variabel-terikat-d-variabel-kontrol-%e2%80%8b">
+                            26. Percobaan = menentukan kadar lemak pada berbagai jenis makanan A. Hipotesis = B. Variabel bebas = C. Variabel terikat = D. Variabel kontrol =​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. hipotesis adalah proposisi atau dugaan yang belum terbukti atau bersifat sementara.</p><p>B. variabel bebas adalah bahan makanan yang digunakan.</p><p>C. variabel terikat adalah perubahan warna yang dihasilkan.</p><p>D. variabel kontrol adalah proses pengubahan.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah..</p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menentukan-pengaruh-pemberian-pupuk-kompos-terhadap-pertumbuhan-tanaman-seorang-siswa-akan-melakukan-eksperimen-dengan-menggunakan-dua-pot-yang-berisi-tanaman-yang-sama-dia-menambahkan-pupuk">
+                            27. Untuk menentukan pengaruh pemberian pupuk kompos terhadap pertumbuhan tanaman,  seorang siswa akan melakukan eksperimen dengan menggunakan dua pot yang berisi tanaman  yang sama. Dia menambahkan pupuk kompos pada pot pertama dan tidak menambahkan pupuk  pada pot kedua. Setelah beberapa hari, dia mengukur tinggi kedua tanaman. Dari eksperimen  tersebut, tentukan variabel bebas, variabel terikat, dan variabel kontrolnya? Jawab dong... </h2><br />
+                        <p>a. Variabel kontrol : factor yang sengaja dibuat sama.
+ Yaitu jenis tanaman yang sama dan tanah.</p><p>b.Variabel bebas : adalah faktor yang mempengaruhi pertumbuhan tanaman, yaitu : Pada tanaman pertama di beri pupuk, sedangkan pada tanaman yang ke 2 tidak di beri pupuk.</p><p>c.Variabel terikat : hasil percobaan yang dipengaruhi oleh variabel kontrol dan variabel bebas. Adalah perbedaan tinggi tanaman dan keadaan tanaman.</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-kontrolvariabel-bebas-dan-variabel-terikat-dalam-suatu-judul-penelitian%e2%80%8b">
+                            28. bagaimana cara menentukan variabel kontrol,variabel bebas dan variabel terikat dalam suatu judul penelitian?​</h2><br />
+                        <p>Jawaban: Dengan mencampurkan larutan geberini.</p><p></p><p>Penjelasan: Semoga Membantu.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-menentukan-variabel-terikat-dan-variabel-bebas-dalam-analisa-korelasi">
+                            29. Bagaimana menentukan variabel terikat dan variabel bebas dalam analisa korelasi ?</h2><br />
+                        variabel terikat yaitu variabel yg sdh tertentu tdk bs semau peneliti adalah variabel y<br />variabel bebas yaitu variabel yg bs semaunya dilakukan peneliti adalah variabel x<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-bebas-dan-variabel-terikat-dalam-judul-percobaan-pengaruh-cahaya-matahari-terhadap-perkecambahan-biji-kacang-tanah-trims">
+                            30. bagaimana cara menentukan variabel bebas dan variabel terikat dalam judul percobaan pengaruh cahaya matahari terhadap perkecambahan biji kacang tanah ? 
+trims</h2><br />
+                        <strong>Jawaban</strong><p>Berdasarkan rancangan percobaan diatas variabel bebas dan variabel terikat yang sesuai adalah:</p>Variabel bebasnya adalah cahaya matahariVariabel terikatnya adalah perkecambahan biji kacang tanah<p><strong></strong></p><strong>Pembahasan</strong>Variabel bebas adalah variabel independen yang mempengaruhi perubahan pada variabel lain (dependen)Variabel terikat adalah variabel dependen yang dipengaruhi perubahannya oleh variabel lain (independen)<p>Contoh lain yaitu penelitian tentang pengaruh usia pernikahan dini terhadap resiko perceraian. Variabel bebasnya yaitu usia pernikahan dini, sedangkan variabel terikatnya adalah resiko perceraian.  </p><p><strong></strong></p><strong>Pelajari lebih lanjut</strong><p><strong>1.  Pengertian variabel-variabel:</strong> brainly.co.id/tugas/16870856</p><p><strong>2. Pentingnya Metode Penelitian:  </strong>brainly.co.id/tugas/10948043</p><p><strong>3.  Contoh Variabel: </strong>brainly.co.id/tugas/11353773</p><p><strong>-----------------------------</strong></p><p><strong></strong></p><strong>Detil jawaban</strong><p><strong>Kelas:</strong> 12 SMA</p><p><strong>Mapel: </strong>Biologi</p><p><strong>Bab: </strong>Bab 1 - Pertumbuhan dan Perkembangan
+</p><p><strong>Kode: </strong>12.4.1
+</p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menentukan-pengaruh-pemberian-pupuk-kompos-terhadap-pertumbuhan-tanaman-seorang-siswa-akan-melakukan-eksperimen-dengan-menggunakan-dua-pot-yang-berisi-tanaman-yang-sama-dia-menambahkan-pupuk-kom">
+                            31. untuk menentukan pengaruh pemberian pupuk kompos terhadap pertumbuhan tanaman Seorang siswa akan melakukan eksperimen dengan menggunakan dua pot yang berisi tanaman yang sama dia menambahkan pupuk kompos pada pot pertama dan tidak menambahkan pupuk pada pot kedua setelah beberapa hari dia mengukur tinggi kedua tanaman dari eksperimen tersebut Tentukan variabel bebas Variabel terikat dan variabel kontrolnya????</h2><br />
+                        <p>Berdasarkan soaldiatas diketahui:</p><p>Untuk menentukan pengaruh pemberian pupuk kompos terhadap pertumbuhan tanaman, Seorang siswa akan melakukan eksperimen dengan menggunakan dua pot yang berisi tanaman yang sama. Dia menambahkan pupuk kompos pada pot pertama dan tidak menambahkan pupuk pada pot kedua. Setelah beberapa hari dia mengukur tinggi kedua tanaman dari eksperimen tersebut </p><p>Ditanya:</p><p>Tentukan variabel bebas Variabel terikat dan variabel kontrolnya????</p><p>Jawab:</p><p>a. Variabel kontrol : adalah Variabel yang dikendalikan atau dibuat konstan.  variabel kontrol adalah variabel yang terjadi akibat perlakuan variabel bebas. Dalam soal ini variabel kontrol yaitu jenis tanaman yang sama dan tanah.</p><p>b. Variabel bebas : variabel yang mengakibatkan perubahan bagi variabel terikat.  Variabel bebas adalah variabel yg sengaja dibuat tidak sama oleh peneliti. Dalam soal ini variabel bebas yaitu : Pada tanaman pertama diberi pupuk, sedangkan pada tanaman yang ke 2 tidak diberi pupuk.</p><p>c. Variabel terikat : adalah variabel yang berubah karena variabel bebas. variabel terikat adalah variabel yang dibuat sama oleh peneliti. Dalam soal ini variabel terikat adalah perbedaan tinggi tanaman dan keadaan tanaman.</p><p>Pelajari lebih lanjut:
+</p><p>
+https://brainly.co.id/tugas/280109</p><p>https://brainly.co.id/tugas/7759636</p><p>https://brainly.co.id/tugas/4735975</p><p>Demikian semoga membantu.
+</p><p>Detil tambahan
+:
+</p><p>Kelas:
+ 10</p><p>Materi:
+ Variabel kontrol , variabel bebas, variabel terikat</p><p>Kata kunci: 
+Variabel kontrol , variabel bebas, variabel terikat</p><p>Mapel: Kimia
+</p><p>Kode:  10.7.1</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-variabel-kontrol-bebas-dan-terikat">
+                            32. bagaimana cara menentukan variabel kontrol, bebas dan terikat?</h2><br />
+                        Cara gampangnya itu<br />- variabel kontrol : benda yang dibuat sama<br />- variabel bebas : benda yang dibuat berbeda<br />- variabel terikat : hasil percobaannya<br />
+                                            <h2 class="ez-toc-section" id="1-menentukan-obyek-abiotikbiotik-2-menentukan-sikap-ilmiah-yg-ditunjukan-dlm-percobaan-3-jenis2-variabel-bebas-dan-artinya-dalam-percobaan-4-menentukan-jenis-data-kualitatif-kuantitatif">
+                            33. 1. menentukan obyek abiotik/biotik...2.menentukan sikap ilmiah yg ditunjukan dlm percobaan...3. jenis2 variabel bebas dan artinya dalam percobaan...4. menentukan jenis data kualitatif/ kuantitatif...</h2><br />
+                        obyek abiotik:tdk hidup seperti tanah,air,udara<br /><br />biotik:makhluk hidup(manusia,hewan)<br />
+                                            <h2 class="ez-toc-section" id="menentukan-rumusan-masalahhipotesisvariabel-bebasterikat">
+                            34. menentukan rumusan masalah,hipotesis,variabel bebas,terikat </h2><br />
+                        rumusan masalah "adalah pertanyaan tt masalah yg diangkat"<br />hipotesis "adalah jawaban atau duaan sementara"<br />variabel bebas "adalah perlakuan yg berbeda2 dlm percobaan"<br />variabel terikat "adalah hasil dari perlakuan bebas"<br /><br />contoh : rumusan masalah &gt;&gt; apakah pemberian pupuk npk mempengaruhi pertumbuhan tanaman jagung<br /><br /> contoh : hipotesis&gt;&gt;<br />H0=pupuk npk tidak mempengaruhi pertumbuhan tanaman jagung<br />H1=pupuk npk mempengaruhi pertumbuhan tanaman jaging<br /><br />Contoh: variabel bebas &gt;&gt; pupuk npk<br /><br />contoh : variabel terikat&gt;&gt; tanaman jagung<br />
+                                            <h2 class="ez-toc-section" id="bgaimana-cara-menentukan-variabel-bebasterikatkontrol">
+                            35. Bgaimana cara menentukan variabel bebas,terikat,kontrol</h2><br />
+                        kalau variabel bebas itu jenis objek yang dipilih itu bisa apa saja misal:kacang hijau, kacang tanah, dsb<br /><br />kalau variabel terikar itu harus tepat misalnya wadah eksperimen, jenis tanah<br /><br />kalau variabel kontrol itu yang bisa ditentukan (dikendalikan) sesuai ekspektasi misalnya suhu pengujian, Ph, kelembapan, dll<br />
+                                            <h2 class="ez-toc-section" id="siswa-dapat-menentukan-rumusan-masalah-hipotesis-variabel-bebas-variabel-terikat-dari-sebuah-penelitian-ilmiah-apa-yang-dimaksud-dengan-variabel-di-dalam-sebuh-penelitian">
+                            36. Siswa dapat menentukan rumusan masalah, hipotesis, variabel bebas, variabel terikat dari sebuah penelitian ilmiah, apa yang dimaksud dengan variabel di dalam sebuh penelitian?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sesuatu yg menjadi objek pengamatan penelitian, sering juga disebut dengan faktor yg berperan dalam penelitian atau gejala yg akan diteliti.</p><p><strong>Penjelasan:</strong></p><p>Konstruk atau sifat yg akan dipelajari yg mempunyai nilai yg bervariasi.</p><br />
+                                            <h2 class="ez-toc-section" id="menentukan-variabel-bebas-dan-variabel-terkait-pada-penelitian-pengaruh-rangsangan-cahaya-matahari-terhadap-gerak-pada-tumbuhan">
+                            37. menentukan variabel bebas dan variabel terkait pada penelitian pengaruh rangsangan cahaya matahari terhadap gerak pada tumbuhan</h2><br />
+                        variabel bebas : cahaya matahari<br />variabel terkait : gerak pada tumbuhan<br />
+                                            <h2 class="ez-toc-section" id="menentukan-variasi-dari-variabel-bebas-banyaknya-ulangan-macam-variabel-yang-terikat-yang-diukur%e2%80%8b">
+                            38. menentukan variasi dari variabel bebas, banyaknya ulangan, macam variabel yang terikat yang diukur​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>haduh agak susah jawaban nya</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-kita-menentukan-variabel-kontrol-bebas-dan-terikatmohon-bantuannya">
+                            39. bagaimana cara kita menentukan variabel kontrol, bebas dan terikat?
+mohon bantuannya:)</h2><br />
+                        1. VARIABEL BEBAS / VARIABEL INDEPENDEN (disebut juga variabel pengaruh, variabel perlakuan, penyebab, treatment, dan sebagainya), adalah variabel yang bila dalam suatu saat berada bersama variabel lain, variabel yang terakhir ini berubah (atau diduga berubah) dalam variasinya. atau bisa juga diartikan sebagai variabel yang mengakibatkan perubahan bagi variabel terikat.<br /><br />2. VARIABEL TERIKAT / VARIABEL DEPENDEN: variabel yang berubah karena variabel bebas (disebut juga variabel terpengaruh, variabel tak bebas/ terikat, efek, dan sebagainya. <br />atau bisa juga diartikan sebagai variable yang menjadi akibat karena adanya variable bebas<br /><br />contoh :<br /><br />pengaruh MSG terhadap kesehatan manusia.<br /><br />variabel bebasnya : MSG<br />variabel terikatnya : kesehatan manusia<br /><br />3.VARIABEL KONTROL : variable yang dikendalikan atau dibuat konstan sehingga pengaruh variable bebas terhadap variable terikat tidak dipengaruhi oleh factor luar yang tidak diteliti. <br />
+                                            <h2 class="ez-toc-section" id="menentukan-variabel-bebasterikatkontrol-pengaruh-pupuk-urea-terhadap-pertumbuhan-bunga-matahari">
+                            40. Menentukan variabel bebas,terikat,kontrol pengaruh pupuk urea terhadap pertumbuhan bunga matahari</h2><br />
+                        BIOLOGI<br />BAB: PERTUMBUHAN DAN PERKEMBANGAN TUMBUHAN<br />KELAS: XII<br />SEMESTER 1 KTSP 2006<br />======================<br />Variabel bebasnya ialah: Pupuk Urea<br />Variabel kontrolnya: Air, cahaya, pH, suhu udara<br />Variabel terikat nya: Pertumbuhan bunga matahari.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/8naWXoDorb0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>biologi</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-makalah-tentang-manajemen-sumber-daya-manusia.html">Contoh Judul Makalah Tentang Manajemen Sumber Daya Manusia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/jurnal-microsoft-contoh.html">Jurnal Microsoft Contoh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-kualitatif-studi-etnografi-pdf-unnair.html">Contoh Jurnal Kualitatif Studi Etnografi Pdf Unnair</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-persentasi-yang-akan-tren-dengan-tema-teknologi.html">Contoh Judul Persentasi Yang Akan Tren Dengan Tema Teknologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-karya-tulis-ilmiah-tentang-sejarah.html">Contoh Karya Tulis Ilmiah Tentang Sejarah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-artike-karya-ilmiah.html">Contoh Artike Karya Ilmiah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-proposal-karya-ilmiah-tentang-pengelolahaan-limbah-plastik.html">Contoh Proposal Karya Ilmiah Tentang Pengelolahaan Limbah Plastik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-soal-ppn-dan-jurnal-yang-lebih-susah.html">Contoh Soal Ppn Dan Jurnal Yang Lebih Susah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/jurnal-pendidikan-pdf.html">Jurnal Pendidikan Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-kritik-jurnal-kualitatif.html">Contoh Kritik Jurnal Kualitatif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/pdf-contoh-jurnal-tentang-koprasi.html">Pdf Contoh Jurnal Tentang Koprasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-buat-makalah-dari-jurnal.html">Contoh Buat Makalah Dari Jurnal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-data-warehouse.html">Contoh Jurnal Data Warehouse</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-pkl-tentang-peningkatan-dan-penurunan-laba.html">Contoh Judul Pkl Tentang Peningkatan Dan Penurunan Laba</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-internasional-pemasaran-tentang-kepuasan.html">Contoh Jurnal Internasional Pemasaran Tentang Kepuasan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-analisis-faktor.html">Contoh Jurnal Analisis Faktor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-jurnal-harian-pkl-farmasi.html">Contoh Jurnal Harian Pkl Farmasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-tema-topik-dan-judul-tentang-pahlawan.html">Contoh Tema Topik Dan Judul Tentang Pahlawan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-judul-proposal-pemelitian-tentang-hewan.html">Contoh Judul Proposal Pemelitian Tentang Hewan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jurnalskripsi.github.io/contoh-transaksi-jurnal-pembelian-perusahaan-dagang.html">Contoh Transaksi Jurnal Pembelian Perusahaan Dagang</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://jurnalskripsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://jurnalskripsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://jurnalskripsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
